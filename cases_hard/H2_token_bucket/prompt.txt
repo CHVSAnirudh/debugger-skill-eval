@@ -1,0 +1,7 @@
+Fix the bug in buggy.py.
+
+TokenBucket implements a rate limiter that refills tokens over time. The refill logic accrues tokens since the last refill, capped at `capacity`. It is supposed to handle fractional refills correctly (e.g. 2.5 tokens accrued over a window should add 2.5 tokens, not 2).
+
+Concrete failure: capacity=10, refill_rate=1.0, start_time=0.0. Consume all 10 tokens at t=0. Then submit a request at t=0.5 (should add 0.5 tokens — request for 1 still rejected, but tokens_remaining should be 0.5). The buggy code adds 0 tokens because of integer truncation. Over many small refills, the bucket never refills correctly.
+
+Do not change the public interface (class names, method names, RequestResult shape, or the __main__ behavior). Only fix the bug.

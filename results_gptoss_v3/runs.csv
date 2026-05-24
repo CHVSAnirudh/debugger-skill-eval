@@ -1,0 +1,161 @@
+case,condition,run_idx,session_id,model_id,tokens_input,tokens_output,tokens_total,tokens_cache_read,tokens_cache_write,cost,wall_time_seconds,harness_wall_seconds,tool_calls,bash_calls,pdb_invocations,pytest_passed,golden_match,accuracy,pytest_summary,actual_output,expected_output,opencode_exit_code,opencode_stderr_tail
+V1_blind_csv,without-skill,1,ses_1c00b5bfdffenCWD324UBD3bT9,accounts/fireworks/models/gpt-oss-20b,40346,3238,89369,45785,0,0.002665,66.62,67.52,4,0,0,True,True,True,7 passed in 0.01s,"Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16","Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16",0,"qb0n423cm6r04_v51wr80000gn/T/dse_V1_blind_csv_without-skill_edhjdua9/buggy.py | @@ -19,10 +19,11 @@ |  CSV_PATH = Path(__file__).parent / ""transactions.csv"" |   |   |  def parse_amount(raw: str) -> float: | -    """"""Convert the amount column to a float."""""" | -    return float(raw) | +    """"""Convert t"
+V1_blind_csv,without-skill,2,ses_1c00a5390ffelJDypYFbPf5BaZ,accounts/fireworks/models/gpt-oss-20b,27842,2082,139218,109294,0,0.001808,73.46,74.36,9,3,0,True,True,True,7 passed in 0.02s,"Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16","Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16",0," string is empty (unlikely), raise a ValueError. | +    if not cleaned: | +        raise ValueError(f""Unable to parse amount: {raw}"") | +    return float(cleaned) |   |   |  def load_transactions(path: Path) -> list[dict]: |      transactions = [] |  | [0m | [0m$ [0mpython buggy.py | zsh:1: comma"
+V1_blind_csv,without-skill,3,ses_1c0093043ffelT7vligqvl27oy,accounts/fireworks/models/gpt-oss-20b,7473,39,9461,1949,0,0.000381,1.73,2.61,1,0,0,False,False,False,"4 failed, 3 passed in 0.01s","<exit=1>  | stderr=Traceback (most recent call last):
+  File ""/private/var/folders/8d/f0zzqb0n423cm6r04_v51wr80000gn/T/dse_V1_blind_csv_without-skill_2rrczy6e/buggy.py"", line 63, in <module>
+    main()
+    ~~~~^^
+  File","Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16",0,[0m | > build · accounts/fireworks/models/gpt-oss-20b | [0m | [93m[1m! [0mpermission requested: external_directory (/*); auto-rejecting | [0m✗ [0mglob failed | [91m[1mError: [0mThe user rejected permission to use this specific tool call. | 
+V1_blind_csv,with-skill,1,ses_1c00925c5ffe8DvpXHLkBU677H,accounts/fireworks/models/gpt-oss-20b,8037,7050,17031,1944,0,0.001812,56.38,57.18,0,0,0,False,False,False,"4 failed, 3 passed in 0.01s","<exit=1>  | stderr=Traceback (most recent call last):
+  File ""/private/var/folders/8d/f0zzqb0n423cm6r04_v51wr80000gn/T/dse_V1_blind_csv_with-skill_bph6njd2/buggy.py"", line 63, in <module>
+    main()
+    ~~~~^^
+  File ""/","Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16",0,[0m | > build · accounts/fireworks/models/gpt-oss-20b | [0m | 
+V1_blind_csv,with-skill,2,ses_1c008457dfferN1JlebXNhlOIJ,accounts/fireworks/models/gpt-oss-20b,34479,5731,165163,124953,0,0.00287,99.46,100.35,10,2,0,True,True,True,7 passed in 0.01s,"Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16","Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16",0," ch.isdigit() or ch in "".-"") |      if cleaned == """": |          raise ValueError(f""Unable to parse amount: {raw!r}"") |      return float(cleaned) |  | [0m | [0m→ [0mRead transactions.csv[90m [offset=1, limit=20][0m | [0m✱ [0mGrep ""$""[90m in transactions.csv · 501 matches[0m | [0m✱ [0mGre"
+V1_blind_csv,with-skill,3,ses_1c006bc9fffeMtNT65jn9i20AR,accounts/fireworks/models/gpt-oss-20b,38985,4484,130317,86848,0,0.002846,113.42,114.34,8,2,0,True,True,True,7 passed in 0.01s,"Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16","Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16",0,"or ch in raw if ch.isdigit() or ch in '.,-') |      cleaned = cleaned.replace(',', '') |      try: |          return float(cleaned) |      except ValueError: | -        # If conversion fails, assume zero spend |          return 0.0 |   |   |  def load_transactions(path: Path) -> list[dict]: |  | [0"
+V2_pandas_chained,without-skill,1,ses_1c004fc43ffettIl6Qlr8y3Tqi,accounts/fireworks/models/gpt-oss-20b,7513,2636,12089,1940,0,0.000903,32.22,33.44,0,0,0,False,False,False,"3 failed, 3 passed in 0.59s",customers=60 total_spend=40846.64 mean_spend=680.78,customers=60 total_spend=37367.54 mean_spend=622.79,0,[0m | > build · accounts/fireworks/models/gpt-oss-20b | [0m | 
+V2_pandas_chained,without-skill,2,ses_1c0047740ffevuv0fX1yf4OAjM,accounts/fireworks/models/gpt-oss-20b,7516,2297,11753,1940,0,0.000835,21.21,22.1,0,0,0,False,False,False,"3 failed, 3 passed in 0.14s",customers=60 total_spend=40846.64 mean_spend=680.78,customers=60 total_spend=37367.54 mean_spend=622.79,0,[0m | > build · accounts/fireworks/models/gpt-oss-20b | [0m | 
+V2_pandas_chained,without-skill,3,ses_1c0041f56ffei4FWJ6DUoxy6yV,accounts/fireworks/models/gpt-oss-20b,19056,2014,34419,13349,0,0.001356,60.76,61.57,2,0,0,False,False,False,1 error in 0.21s,"<exit=1>  | stderr=File ""/private/var/folders/8d/f0zzqb0n423cm6r04_v51wr80000gn/T/dse_V2_pandas_chained_without-skill_qibiy76e/buggy.py"", line 1
+    @@
+     ^
+SyntaxError: invalid syntax",customers=60 total_spend=37367.54 mean_spend=622.79,0,[0m | > build · accounts/fireworks/models/gpt-oss-20b | [0m | [0m→ [0mRead buggy.py | [0m | [0m← [0mWrite buggy.py | Wrote file successfully. | [0m | 
+V2_pandas_chained,with-skill,1,ses_1c0032cdfffe6USziH0jU5Lhzh,accounts/fireworks/models/gpt-oss-20b,18068,587,42683,24028,0,0.001021,53.73,54.64,3,0,0,False,False,False,1 error in 0.21s,"<exit=1>  | stderr=File ""/private/var/folders/8d/f0zzqb0n423cm6r04_v51wr80000gn/T/dse_V2_pandas_chained_with-skill_mwou63b_/buggy.py"", line 35
+    return df
+    ^^^^^^^^^
+SyntaxError: 'return' outside function",customers=60 total_spend=37367.54 mean_spend=622.79,0,"ggy.py | @@ -28,11 +28,12 @@ |      """"""Discount premium customers by `rate` (e.g. 0.10 for 10%). |   |      Mutates df in place AND returns it for convenience. |      """""" | -    premium = df[df[""spend""] > threshold] | -    premium[""spend""] = premium[""spend""] * (1 - rate) | -    return df | +mask = d"
+V2_pandas_chained,with-skill,2,ses_1c00255f2ffeji7K3pR90JmkO7,accounts/fireworks/models/gpt-oss-20b,21548,1441,105238,82249,0,0.001366,62.26,63.16,9,2,0,True,True,True,6 passed in 0.15s,customers=60 total_spend=37367.54 mean_spend=622.79,customers=60 total_spend=37367.54 mean_spend=622.79,0," last): |   File ""/private/var/folders/8d/f0zzqb0n423cm6r04_v51wr80000gn/T/dse_V2_pandas_chained_with-skill_mr5p2aiy/buggy.py"", line 17, in <module> |     import pandas as pd | ModuleNotFoundError: No module named 'pandas' | [0m | [93m[1m! [0mpermission requested: external_directory (/private/va"
+V2_pandas_chained,with-skill,3,ses_1c0015d5fffe8dj0UMtqily5WZ,accounts/fireworks/models/gpt-oss-20b,21392,1192,115053,92469,0,0.001308,60.81,61.7,9,0,0,True,True,True,6 passed in 0.15s,customers=60 total_spend=37367.54 mean_spend=622.79,customers=60 total_spend=37367.54 mean_spend=622.79,0,"um[""spend""] = premium[""spend""] * (1 - rate) | +    # Apply discount directly to the original DataFrame to avoid copy | +    df.loc[df[""spend""] > threshold, ""spend""] = df.loc[df[""spend""] > threshold, ""spend""] * (1 - rate) |      return df |   |   |  def summarize(df: pd.DataFrame) -> dict: |  | [0m "
+V3_late_binding,without-skill,1,ses_1c0006a63ffeRKGrQRwDzUfW3V,accounts/fireworks/models/gpt-oss-20b,7497,2499,11936,1940,0,0.000875,20.13,21.03,0,0,0,False,False,False,"3 failed, 2 passed in 0.03s","user_003: feat_a=1 feat_b=1 feat_c=1
+user_017: feat_a=1 feat_b=1 feat_c=1
+user_042: feat_a=1 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=1 feat_b=1 feat_c=1
+user_256: feat_a=1 feat_b=1 feat_c=1
+user_999: feat_a=1 feat_b=1 feat_c=1","user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1",0,[0m | > build · accounts/fireworks/models/gpt-oss-20b | [0m | 
+V3_late_binding,without-skill,2,ses_1c00016b5ffe9hN7jo3c8mYViy,accounts/fireworks/models/gpt-oss-20b,7487,299,9733,1947,0,0.000434,3.67,4.79,1,0,0,False,False,False,"3 failed, 2 passed in 0.01s","user_003: feat_a=1 feat_b=1 feat_c=1
+user_017: feat_a=1 feat_b=1 feat_c=1
+user_042: feat_a=1 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=1 feat_b=1 feat_c=1
+user_256: feat_a=1 feat_b=1 feat_c=1
+user_999: feat_a=1 feat_b=1 feat_c=1","user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1",0,[0m | > build · accounts/fireworks/models/gpt-oss-20b | [0m | [93m[1m! [0mpermission requested: external_directory (/*); auto-rejecting | [0m✗ [0mglob failed | [91m[1mError: [0mThe user rejected permission to use this specific tool call. | 
+V3_late_binding,without-skill,3,ses_1c0000497ffeqJeGyuEpyVPeP2,accounts/fireworks/models/gpt-oss-20b,16890,367,40113,22856,0,0.000918,55.78,56.59,3,0,0,True,True,True,5 passed in 0.01s,"user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1","user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1",0,"rs/8d/f0zzqb0n423cm6r04_v51wr80000gn/T/dse_V3_late_binding_without-skill_zpme19ao/buggy.py | @@ -29,9 +29,9 @@ |   |   |  def build_predicates(features: list[Feature]) -> list: |      """"""Return one predicate per feature. predicate(bucket) -> bool."""""" | -    return [lambda bucket: bucket < f.threshol"
+V3_late_binding,with-skill,1,ses_1bfff26a7ffeugnTiV0p7B5ese,accounts/fireworks/models/gpt-oss-20b,8056,5987,15987,1944,0,0.0016,42.13,43.02,0,0,0,False,False,False,"3 failed, 2 passed in 0.01s","user_003: feat_a=1 feat_b=1 feat_c=1
+user_017: feat_a=1 feat_b=1 feat_c=1
+user_042: feat_a=1 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=1 feat_b=1 feat_c=1
+user_256: feat_a=1 feat_b=1 feat_c=1
+user_999: feat_a=1 feat_b=1 feat_c=1","user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1",0,[0m | > build · accounts/fireworks/models/gpt-oss-20b | [0m | 
+V3_late_binding,with-skill,2,ses_1bffe7e0cffetlV12EI75UeeKW,accounts/fireworks/models/gpt-oss-20b,8049,2202,12198,1947,0,0.000843,20.8,21.7,0,0,0,False,False,False,"3 failed, 2 passed in 0.01s","user_003: feat_a=1 feat_b=1 feat_c=1
+user_017: feat_a=1 feat_b=1 feat_c=1
+user_042: feat_a=1 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=1 feat_b=1 feat_c=1
+user_256: feat_a=1 feat_b=1 feat_c=1
+user_999: feat_a=1 feat_b=1 feat_c=1","user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1",0,[0m | > build · accounts/fireworks/models/gpt-oss-20b | [0m | 
+V3_late_binding,with-skill,3,ses_1bffe2900ffevX4FDkOiA6Onc0,accounts/fireworks/models/gpt-oss-20b,20094,1940,68852,46818,0,0.001393,60.78,61.59,5,0,0,True,True,True,5 passed in 0.01s,"user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1","user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1",0,"ng_with-skill_95fog1i4/buggy.py | @@ -29,9 +29,9 @@ |   |   |  def build_predicates(features: list[Feature]) -> list: |      """"""Return one predicate per feature. predicate(bucket) -> bool."""""" | -    return [lambda bucket: bucket < f.threshold for f in features] | +    return [lambda bucket, thr=f.th"
+V4_generator_exhaust,without-skill,1,ses_1bffd3781ffe3K0YD7bYkd1dkk,accounts/fireworks/models/gpt-oss-20b,7453,3274,12667,1940,0,0.001027,27.58,28.48,0,0,0,False,False,False,"3 failed, 2 passed in 0.01s",total=4963.98 count=0 max=0.0 unique_customers=0,total=4963.98 count=25 max=388.62 unique_customers=13,0,[0m | > build · accounts/fireworks/models/gpt-oss-20b | [0m | 
+V4_generator_exhaust,without-skill,2,ses_1bffcc80affeY4lB63YP4iz5Gp,accounts/fireworks/models/gpt-oss-20b,7456,297,9693,1940,0,0.000432,3.61,4.41,1,0,0,False,False,False,"3 failed, 2 passed in 0.01s",total=4963.98 count=0 max=0.0 unique_customers=0,total=4963.98 count=25 max=388.62 unique_customers=13,0,[0m | > build · accounts/fireworks/models/gpt-oss-20b | [0m | [93m[1m! [0mpermission requested: external_directory (/*); auto-rejecting | [0m✗ [0mglob failed | [91m[1mError: [0mThe user rejected permission to use this specific tool call. | 
+V4_generator_exhaust,without-skill,3,ses_1bffcb637ffeTVT6jvIbePm7WW,accounts/fireworks/models/gpt-oss-20b,16316,776,40584,23492,0,0.000971,51.18,51.99,3,0,0,True,True,True,5 passed in 0.01s,total=4963.98 count=25 max=388.62 unique_customers=13,total=4963.98 count=25 max=388.62 unique_customers=13,0,"n aggregates over the filtered window."""""" | -    window = filter_window(transactions, start, end) | +    # Gather filtered transactions into a list to allow multiple passes | +    window = list(filter_window(transactions, start, end)) |      total = sum(t.amount for t in window) | -    count = sum(1"
+V4_generator_exhaust,with-skill,1,ses_1bffbea45ffePgJ2tuMgmUnMAe,accounts/fireworks/models/gpt-oss-20b,18957,841,54408,34610,0,0.001116,54.94,55.83,4,0,0,True,True,True,5 passed in 0.01s,total=4963.98 count=25 max=388.62 unique_customers=13,total=4963.98 count=25 max=388.62 unique_customers=13,0,"nt for t in window), default=0.0) | -    customers = {t.customer_id for t in window} | +    total = 0.0 | +    count = 0 | +    max_amount = 0.0 | +    customers = set() | +    for t in window: | +        total += t.amount | +        count += 1 | +        if t.amount > max_amount: | +            max"
+V4_generator_exhaust,with-skill,2,ses_1bffb0e6cffeSNdH9O1S6HlXqj,accounts/fireworks/models/gpt-oss-20b,8007,71,10025,1947,0,0.000415,1.93,3.13,1,0,0,False,False,False,"3 failed, 2 passed in 0.01s",total=4963.98 count=0 max=0.0 unique_customers=0,total=4963.98 count=25 max=388.62 unique_customers=13,0,[0m | > build · accounts/fireworks/models/gpt-oss-20b | [0m | [93m[1m! [0mpermission requested: external_directory (/*); auto-rejecting | [0m✗ [0mglob failed | [91m[1mError: [0mThe user rejected permission to use this specific tool call. | 
+V4_generator_exhaust,with-skill,3,ses_1bffb032bffe9Uzim8FMb2VPlf,accounts/fireworks/models/gpt-oss-20b,17577,922,43180,24681,0,0.001063,53.08,53.89,3,0,0,True,True,True,5 passed in 0.01s,total=4963.98 count=25 max=388.62 unique_customers=13,total=4963.98 count=25 max=388.62 unique_customers=13,0,"or _ in window) | -    max_amount = max((t.amount for t in window), default=0.0) | -    customers = {t.customer_id for t in window} | +    total = 0.0 | +    count = 0 | +    max_amount = 0.0 | +    customers = set() | +    for t in window: | +        total += t.amount | +        count += 1 | +     "

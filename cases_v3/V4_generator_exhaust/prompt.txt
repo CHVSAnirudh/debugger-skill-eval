@@ -1,0 +1,9 @@
+Fix the bug in buggy.py.
+
+`report(transactions, start, end)` is supposed to compute several aggregates over the same filtered subset of transactions: total amount, count, max amount, and number of unique customers.
+
+Currently only `total` is correct — `count`, `max`, and `unique_customers` all come back as 0 / 0.0 / 0 even when there are matching transactions.
+
+Constraints:
+- Keep the public interface (function names, signatures, dict shape, printed output format).
+- The fix must keep `filter_window` as a function that returns an iterable; do not unconditionally materialize the full transaction list.

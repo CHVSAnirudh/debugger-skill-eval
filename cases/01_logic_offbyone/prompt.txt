@@ -1,0 +1,6 @@
+Fix the bug in buggy.py.
+
+sum_to(n) is supposed to return 1 + 2 + ... + n inclusive.
+Currently sum_to(5) returns 10, but it should return 15.
+
+Do not change the public interface (function name, parameters, or the __main__ behavior). Only fix the bug.

@@ -1,0 +1,10 @@
+Fix buggy.py.
+
+When you run `python buggy.py`, it crashes with a ValueError. The script reads transactions.csv (in the same directory) and is supposed to print the top 5 customers by total spend. The CSV has 500 rows.
+
+The upstream system that generates transactions.csv supposedly didn't change its format, but something in the data is breaking the parser. Find what's wrong and fix it so the script processes all 500 rows correctly and prints the expected summary.
+
+Constraints:
+- Do not change the public interface (function names, signatures, or the order of top customers in the output).
+- The fix should handle any reasonable variant of the malformed amount field, not just the specific row that crashes first.
+- Do not skip or drop bad rows — parse them correctly.

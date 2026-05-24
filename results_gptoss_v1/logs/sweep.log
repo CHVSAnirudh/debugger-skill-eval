@@ -1,0 +1,100 @@
+[1/48] 01_logic_offbyone | without-skill | run 1
+   acc=False tokens=9525 wall=4.59s pdb=0
+[2/48] 01_logic_offbyone | without-skill | run 2
+   acc=True tokens=41962 wall=63.68s pdb=0
+[3/48] 01_logic_offbyone | without-skill | run 3
+   acc=True tokens=39762 wall=60.24s pdb=0
+[4/48] 01_logic_offbyone | with-skill | run 1
+   acc=True tokens=41362 wall=55.89s pdb=0
+[5/48] 01_logic_offbyone | with-skill | run 2
+   acc=False tokens=11205 wall=22.75s pdb=0
+[6/48] 01_logic_offbyone | with-skill | run 3
+   acc=False tokens=11594 wall=27.82s pdb=0
+[7/48] 02_logic_conditional | without-skill | run 1
+   acc=True tokens=40851 wall=59.51s pdb=0
+[8/48] 02_logic_conditional | without-skill | run 2
+   acc=True tokens=39456 wall=54.25s pdb=0
+[9/48] 02_logic_conditional | without-skill | run 3
+   acc=True tokens=62825 wall=66.81s pdb=0
+[10/48] 02_logic_conditional | with-skill | run 1
+   acc=True tokens=125281 wall=95.79s pdb=0
+[11/48] 02_logic_conditional | with-skill | run 2
+   acc=True tokens=196194 wall=161.38s pdb=0
+[12/48] 02_logic_conditional | with-skill | run 3
+   acc=False tokens=9963 wall=2.94s pdb=0
+[13/48] 03_state_aliasing | without-skill | run 1
+   acc=False tokens=9409 wall=1.95s pdb=0
+[14/48] 03_state_aliasing | without-skill | run 2
+   acc=True tokens=51495 wall=56.43s pdb=0
+[15/48] 03_state_aliasing | without-skill | run 3
+   acc=False tokens=10695 wall=21.43s pdb=0
+[16/48] 03_state_aliasing | with-skill | run 1
+   acc=True tokens=99816 wall=73.06s pdb=0
+[17/48] 03_state_aliasing | with-skill | run 2
+   acc=False tokens=11217 wall=23.21s pdb=0
+[18/48] 03_state_aliasing | with-skill | run 3
+   acc=True tokens=55194 wall=63.46s pdb=0
+[19/48] 04_state_classvar | without-skill | run 1
+   acc=True tokens=40109 wall=57.94s pdb=0
+[20/48] 04_state_classvar | without-skill | run 2
+   acc=True tokens=50003 wall=57.46s pdb=0
+[21/48] 04_state_classvar | without-skill | run 3
+   acc=True tokens=40406 wall=55.2s pdb=0
+[22/48] 04_state_classvar | with-skill | run 1
+   acc=True tokens=52121 wall=55.89s pdb=0
+[23/48] 04_state_classvar | with-skill | run 2
+   acc=True tokens=42116 wall=60.39s pdb=0
+[24/48] 04_state_classvar | with-skill | run 3
+   acc=True tokens=40880 wall=52.34s pdb=0
+[25/48] 05_exc_keyerror | without-skill | run 1
+   acc=False tokens=9489 wall=3.66s pdb=0
+[26/48] 05_exc_keyerror | without-skill | run 2
+   acc=True tokens=71317 wall=65.42s pdb=0
+[27/48] 05_exc_keyerror | without-skill | run 3
+   acc=False tokens=11413 wall=20.54s pdb=0
+[28/48] 05_exc_keyerror | with-skill | run 1
+   acc=True tokens=41018 wall=53.88s pdb=0
+[29/48] 05_exc_keyerror | with-skill | run 2
+   acc=True tokens=41184 wall=51.75s pdb=0
+[30/48] 05_exc_keyerror | with-skill | run 3
+   acc=True tokens=122284 wall=133.77s pdb=0
+[31/48] 06_exc_typeerror | without-skill | run 1
+   acc=True tokens=40011 wall=59.61s pdb=0
+[32/48] 06_exc_typeerror | without-skill | run 2
+   acc=True tokens=54273 wall=76.55s pdb=0
+[33/48] 06_exc_typeerror | without-skill | run 3
+   acc=True tokens=38633 wall=50.67s pdb=0
+[34/48] 06_exc_typeerror | with-skill | run 1
+   acc=True tokens=40878 wall=51.06s pdb=0
+[35/48] 06_exc_typeerror | with-skill | run 2
+   acc=True tokens=52052 wall=57.33s pdb=0
+[36/48] 06_exc_typeerror | with-skill | run 3
+   acc=True tokens=63865 wall=62.54s pdb=0
+[37/48] 07_async_race | without-skill | run 1
+   acc=False tokens=11852 wall=36.96s pdb=0
+[38/48] 07_async_race | without-skill | run 2
+   acc=True tokens=39891 wall=54.28s pdb=0
+[39/48] 07_async_race | without-skill | run 3
+   acc=False tokens=9441 wall=2.69s pdb=0
+[40/48] 07_async_race | with-skill | run 1
+   acc=False tokens=12953 wall=56.76s pdb=0
+[41/48] 07_async_race | with-skill | run 2
+   acc=False tokens=9981 wall=2.81s pdb=0
+[42/48] 07_async_race | with-skill | run 3
+   acc=True tokens=52959 wall=58.29s pdb=0
+[43/48] 08_async_await_missing | without-skill | run 1
+   acc=True tokens=78192 wall=75.35s pdb=0
+[44/48] 08_async_await_missing | without-skill | run 2
+   acc=False tokens=10500 wall=11.53s pdb=0
+[45/48] 08_async_await_missing | without-skill | run 3
+   acc=False tokens=13452 wall=64.01s pdb=0
+[46/48] 08_async_await_missing | with-skill | run 1
+   acc=True tokens=63540 wall=95.95s pdb=0
+[47/48] 08_async_await_missing | with-skill | run 2
+   acc=False tokens=20059 wall=24.67s pdb=0
+[48/48] 08_async_await_missing | with-skill | run 3
+   acc=True tokens=540024 wall=292.53s pdb=0
+
+Done. Results: /Users/anirudhchebolu/Desktop/projects/debugger-skill-eval/results_gptoss_v1/runs.csv
+Summary: /Users/anirudhchebolu/Desktop/projects/debugger-skill-eval/results_gptoss_v1/summary.md
+=== v1 done ===

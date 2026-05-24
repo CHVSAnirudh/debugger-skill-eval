@@ -1,0 +1,7 @@
+Fix the bug in buggy.py.
+
+run(n_tasks, per_task) is supposed to launch n_tasks coroutines that each increment a counter `per_task` times, then return the final value. With n_tasks=5 and per_task=10 it should return 50.
+
+Currently it returns 0 — the coroutines never actually run before run() returns.
+
+Do not change the public interface (function names, parameters, or the __main__ behavior). Only fix the bug. (asyncio in Python is single-threaded for coroutines, so no lock is needed.)

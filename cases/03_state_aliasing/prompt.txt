@@ -1,0 +1,7 @@
+Fix the bug in buggy.py.
+
+add_item(item) should return a new list containing only that item. Calling it twice with separate items should produce two independent single-item lists.
+
+Currently the lists accumulate across calls: add_item(1) returns [1], then add_item(2) returns [1, 2], which is wrong.
+
+Do not change the public interface (function name, the parameter "item", the parameter default, or the __main__ behavior beyond making the output correct). You may change the default value if needed.

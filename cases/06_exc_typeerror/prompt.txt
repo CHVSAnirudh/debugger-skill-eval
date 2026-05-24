@@ -1,0 +1,5 @@
+Fix the bug in buggy.py.
+
+total_str_nums(items) takes a list of strings representing integers (e.g. ["1", "2", "3"]) and should return their integer sum (6 in that example). Currently it raises TypeError because sum() can't add strings to 0.
+
+Do not change the public interface (function name, parameters, or the __main__ behavior). Only fix the bug.

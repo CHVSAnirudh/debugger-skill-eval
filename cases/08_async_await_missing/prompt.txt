@@ -1,0 +1,7 @@
+Fix the bug in buggy.py.
+
+consumer(multiplier) is supposed to call get_value() (which returns 42) and return 42 * multiplier. With multiplier=2 it should return 84.
+
+Currently it raises TypeError because get_value() returns a coroutine, not an int, and you can't multiply a coroutine.
+
+You must keep get_value as an async function. Fix consumer (and the __main__ block if needed) so the final printed result is correct.

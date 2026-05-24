@@ -1,0 +1,11 @@
+Fix the bug in buggy.py.
+
+The expression parser is supposed to implement standard left-associative arithmetic so that `20 / 2 / 5` evaluates to `(20 / 2) / 5 = 2`, and `10 - 2 - 3` evaluates to `(10 - 2) - 3 = 5`.
+
+Concrete failures:
+- `20 / 2 / 5` currently returns `50.0` (it's evaluating as `20 / (2 / 5)`)
+- `10 - 2 - 3` works because `expr` uses a loop, but `2 * 3 * 4` and `2 + 3 + 4` happen to give the same result either way, so the bug only shows up for operators that aren't associative (− and /).
+
+The parsing of `+` / `-` is already correct (loop in `expr`). Make `*` / `/` left-associative the same way.
+
+Do not change the public interface (function names, class names, ParseError, or the __main__ behavior). Only fix the parsing of `*` and `/`.

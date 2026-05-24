@@ -1,0 +1,10 @@
+Fix the bug in buggy.py.
+
+The rollout engine is supposed to evaluate each feature's predicate independently. With features [(feat_a, 10), (feat_b, 50), (feat_c, 90)] and a user whose bucket is 30, the correct answer is `feat_a=0 feat_b=1 feat_c=1` (30 is in the rollout for feat_b and feat_c but not for the 10% feat_a).
+
+Currently every feature reports the same value — as if all three predicates were checking against the same threshold instead of their own.
+
+Constraints:
+- Keep the public interface (function names, signatures, the order in the printed output).
+- The predicate list returned by `build_predicates` must still be a list of callables in feature order.
+- Each predicate must close over its own feature's threshold.

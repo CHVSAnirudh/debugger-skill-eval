@@ -1,0 +1,10 @@
+Fix the bug in buggy.py.
+
+`apply_discount(df, threshold, rate)` is supposed to discount the spend of customers with spend above `threshold` by a fractional rate (e.g. 0.10 for a 10% discount), and return the modified DataFrame. The function looks like it discounts the right rows, but after running the pipeline the totals are unchanged from the un-discounted version — as if the discount never applied.
+
+The bug is in `apply_discount`. The data is read from customers.csv (in the same directory). The default config (threshold=500, rate=0.10) is read from stdin as JSON, and the printed summary should reflect post-discount totals.
+
+Constraints:
+- Keep the function signature `apply_discount(df, threshold, rate) -> pd.DataFrame`.
+- Do not change the public interface of any function or the printed output format.
+- Do not change the CSV.

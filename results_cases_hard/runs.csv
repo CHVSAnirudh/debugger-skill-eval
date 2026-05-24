@@ -1,0 +1,133 @@
+case,condition,run_idx,session_id,model_id,tokens_input,tokens_output,tokens_total,tokens_cache_read,tokens_cache_write,cost,wall_time_seconds,harness_wall_seconds,tool_calls,bash_calls,pdb_invocations,pytest_passed,golden_match,accuracy,pytest_summary,actual_output,expected_output,opencode_exit_code,opencode_stderr_tail
+H1_rolling_stats,without-skill,1,ses_1c0c1e3baffeaz0VLiJOR17LDw,accounts/fireworks/models/kimi-k2p6,26172,2424,97769,69173,0,0.045627,71.31,72.4,7,3,0,True,True,True,7 passed in 0.00s,"cpu: n=4 mean=50.0 max=100.0 min=10.0
+mem: n=4 mean=51.25 max=90.0 min=5.0","cpu: n=4 mean=50.0 max=100.0 min=10.0
+mem: n=4 mean=51.25 max=90.0 min=5.0",0," import RollingStats |  | for window in range(1, 6): |     for _ in range(1000): |         rs = RollingStats(window) |         vals = [] |         for _ in range(20): |             v = random.uniform(-100, 100) |             rs.add(v) |             vals.append(v) |             recent = vals[-window:"
+H1_rolling_stats,without-skill,2,ses_1c0c0c8fbffeB9sbxpJCCyFkF3,accounts/fireworks/models/kimi-k2p6,25979,2355,49405,21071,0,0.037471,64.45,65.34,3,1,0,True,True,True,7 passed in 0.00s,"cpu: n=4 mean=50.0 max=100.0 min=10.0
+mem: n=4 mean=51.25 max=90.0 min=5.0","cpu: n=4 mean=50.0 max=100.0 min=10.0
+mem: n=4 mean=51.25 max=90.0 min=5.0",0,"values: |          raise ValueError(""no values"") |  | [0m | [0m$ [0mpython3 -c "" | from buggy import RollingStats | rs = RollingStats(3) | rs.add(1.0) | rs.add(2.0) | rs.add(3.0) | print('max after 1,2,3:', rs.max()) | rs.add(5.0) | print('max after adding 5:', rs.max()) | rs2 = RollingStats(3) |"
+H1_rolling_stats,without-skill,3,ses_1c0bfc93cffe6GdDqputXkXw09,accounts/fireworks/models/kimi-k2p6,13672,2874,50944,34398,0,0.029988,78.43,79.32,3,1,0,True,True,True,7 passed in 0.00s,"cpu: n=4 mean=50.0 max=100.0 min=10.0
+mem: n=4 mean=51.25 max=90.0 min=5.0","cpu: n=4 mean=50.0 max=100.0 min=10.0
+mem: n=4 mean=51.25 max=90.0 min=5.0",0,"dd(2.0) | rs.add(3.0) | print('After 1,2,3: max=', rs.max(), 'min=', rs.min()) | rs.add(5.0) | print('After adding 5: max=', rs.max(), 'min=', rs.min()) |  | # Test min extension too | rs2 = RollingStats(3) | rs2.add(5.0) | rs2.add(4.0) | rs2.add(3.0) | print('After 5,4,3: max=', rs2.max(), 'min=', "
+H1_rolling_stats,with-skill,1,ses_1c0be92c1ffeH8w5SAoLbZ90em,accounts/fireworks/models/kimi-k2p6,56426,9707,451417,385284,0,0.154078,134.66,135.58,24,15,6,True,True,True,7 passed in 0.00s,"cpu: n=4 mean=50.0 max=100.0 min=10.0
+mem: n=4 mean=51.25 max=90.0 min=5.0","cpu: n=4 mean=50.0 max=100.0 min=10.0
+mem: n=4 mean=51.25 max=90.0 min=5.0",0,"y.py[90m [offset=60, limit=10][0m | [0m→ [0mRead buggy.py[90m [offset=66, limit=10][0m | [0m | [0m$ [0mpython3 -m pdb -c 'b buggy.py:71' -c 'c' -c 'pp self._cached_max' -c 'c' -c 'pp self._cached_max' -c 'c' -c 'q' repro.py | Breakpoint 1 at /private/var/folders/8d/f0zzqb0n423cm6r04_v51wr80"
+H1_rolling_stats,with-skill,2,ses_1c0bc8089ffe4yASzV3aPmrqxk,accounts/fireworks/models/kimi-k2p6,25398,3654,95249,66197,0,0.049336,73.33,74.26,7,3,0,True,True,True,7 passed in 0.00s,"cpu: n=4 mean=50.0 max=100.0 min=10.0
+mem: n=4 mean=51.25 max=90.0 min=5.0","cpu: n=4 mean=50.0 max=100.0 min=10.0
+mem: n=4 mean=51.25 max=90.0 min=5.0",0,"st 1 passed: max refreshed after new extremum | Test 2 passed: min refreshed after new extremum | Test 3 passed: process() returns correct max |  | All tests passed. | [0m | [0m$ [0mcat <<'JSONEOF' | python3 buggy.py | {""window_size"": 3, ""events"": [ |   {""stream"": ""temp"", ""timestamp"": 1, ""value"":"
+H1_rolling_stats,with-skill,3,ses_1c0bb5e05ffeug2gxzGwpaCIQO,accounts/fireworks/models/kimi-k2p6,34432,6202,279305,238671,0,0.095706,149.59,150.48,19,12,4,True,True,True,7 passed in 0.00s,"cpu: n=4 mean=50.0 max=100.0 min=10.0
+mem: n=4 mean=51.25 max=90.0 min=5.0","cpu: n=4 mean=50.0 max=100.0 min=10.0
+mem: n=4 mean=51.25 max=90.0 min=5.0",0,bolu  staff  4465 May 19 13:37 buggy.py | -rw-r--r--    1 anirudhchebolu  staff   713 May 19 13:27 inputs.json | -rw-r--r--    1 anirudhchebolu  staff   845 May 19 13:20 prompt.txt | -rw-r--r--    1 anirudhchebolu  staff   476 May 19 13:35 repro.py | -rw-r--r--    1 anirudhchebolu  staff   222 May 1
+H2_token_bucket,without-skill,1,ses_1c0b911abffeCXPKQvPGXIIw20,accounts/fireworks/models/kimi-k2p6,11589,900,54482,41993,0,0.021328,54.79,55.68,4,1,0,True,True,True,6 passed in 0.00s,"accepted=6 rejected=2 final={'a': 0.5, 'b': 4.5}","accepted=6 rejected=2 final={'a': 0.5, 'b': 4.5}",0,"assert not result.accepted, 'Should reject request for 1 token when only 0.5 available' | assert result.tokens_remaining == 0.5, f'Expected 0.5, got {result.tokens_remaining}' |  | # Submit request at t=1.5 (should add another 1.0 token, total 1.5) | result = bucket.try_consume(1.5, 1.0) | assert re"
+H2_token_bucket,without-skill,2,ses_1c0b8378cffemL1AVrkINfP77L,accounts/fireworks/models/kimi-k2p6,21396,811,44545,22338,0,0.027144,57.69,58.6,4,1,0,True,True,True,6 passed in 0.00s,"accepted=6 rejected=2 final={'a': 0.5, 'b': 4.5}","accepted=6 rejected=2 final={'a': 0.5, 'b': 4.5}",0,"lt: |  | [0m | [0m→ [0mRead buggy.py[90m [offset=36, limit=20][0m | [0m | [0m$ [0mpython3 -c "" | from buggy import TokenBucket | b = TokenBucket(10, 1.0, 0.0) | # consume all 10 tokens | r = b.try_consume(0.0, 10) | print('after consume 10 at t=0:', r) | # submit at t=0.5 | r = b.try_consume"
+H2_token_bucket,without-skill,3,ses_1c0b75110ffedDUU7out82dYmg,accounts/fireworks/models/kimi-k2p6,12192,1276,69170,55702,0,0.025599,61.32,62.49,5,2,0,True,True,True,6 passed in 0.00s,"accepted=6 rejected=2 final={'a': 0.5, 'b': 4.5}","accepted=6 rejected=2 final={'a': 0.5, 'b': 4.5}",0,"=1.0, start_time=0.0) | # Consume all 10 tokens at t=0 | for i in range(10): |     r = b.try_consume(0.0) |     assert r.accepted, f'Request {i} should be accepted' |  | # Now submit at t=0.5, should add 0.5 tokens but request for 1 rejected | r = b.try_consume(0.5, 1.0) | assert not r.accepted, 'Sh"
+H2_token_bucket,with-skill,1,ses_1c0b65d6fffec2HgK6ZMC1izib,accounts/fireworks/models/kimi-k2p6,36297,1180,82770,45293,0,0.046449,61.36,62.27,6,3,0,True,True,True,6 passed in 0.00s,"accepted=6 rejected=2 final={'a': 0.5, 'b': 4.5}","accepted=6 rejected=2 final={'a': 0.5, 'b': 4.5}",0,"m buggy import TokenBucket |  | b = TokenBucket(10, 1.0, 0.0) | b.try_consume(0.0, 10) | for t in [0.3, 0.6, 0.9, 1.2]: |     r = b.try_consume(t, 1) |     print(f't={t}: accepted={r.accepted}, remaining={r.tokens_remaining}') | print('Expected: all rejected, remaining accumulates to 1.2') | "" | t=0"
+H2_token_bucket,with-skill,2,ses_1c0b569c7ffeAG7KHRwPeQtT7N,accounts/fireworks/models/kimi-k2p6,23535,1018,58721,34168,0,0.031897,61.16,62.03,4,2,0,True,True,True,6 passed in 0.00s,"accepted=6 rejected=2 final={'a': 0.5, 'b': 4.5}","accepted=6 rejected=2 final={'a': 0.5, 'b': 4.5}",0,"ns_remaining}') | "" |  | zsh:1: command not found: python | [0m | [0m$ [0mpython3 -c "" | from buggy import TokenBucket |  | b = TokenBucket(10, 1.0, 0.0) | result = b.try_consume(0.0, 10) | print(f'After consuming all: accepted={result.accepted}, remaining={result.tokens_remaining}') | result = b"
+H2_token_bucket,with-skill,3,ses_1c0b476e0ffe4QYs6UvKJlzhol,accounts/fireworks/models/kimi-k2p6,27123,4809,217700,185768,0,0.074726,76.21,77.1,14,12,8,True,True,True,6 passed in 0.00s,"accepted=6 rejected=2 final={'a': 0.5, 'b': 4.5}","accepted=6 rejected=2 final={'a': 0.5, 'b': 4.5}",0, | The program finished and will be restarted | [0m | [0m$ [0mrm /private/var/folders/8d/f0zzqb0n423cm6r04_v51wr80000gn/T/dse_H2_token_bucket_with-skill_3vf2lc4x/test_bug.py /private/var/folders/8d/f0zzqb0n423cm6r04_v51wr80000gn/T/dse_H2_token_bucket_with-skill_3vf2lc4x/test_pdb.py /private/var/f
+H3_graph_bfs,without-skill,1,ses_1c0b348daffeKTV3Mk8GmlTKRf,accounts/fireworks/models/kimi-k2p6,24049,2011,105033,78973,0,0.043526,83.59,84.54,8,4,0,True,True,True,7 passed in 0.00s,"A -> furthest=C(d=2) | A=0, B=1, C=2, D=1, E=1","A -> furthest=C(d=2) | A=0, B=1, C=2, D=1, E=1",0,"ph([['A','B'],['B','C'],['C','A']]) | assert shortest_distances(g, 'A') == {'A':0,'B':1,'C':2} |  | # Test case 4: disconnected node | g = build_graph([['A','B']]) | assert shortest_distances(g, 'A') == {'A':0,'B':1} |  | # Test case 5: source not in graph | g = build_graph([]) | assert shortest_dis"
+H3_graph_bfs,without-skill,2,ses_1c0b1fe09ffemMZFVhte25VaXw,accounts/fireworks/models/kimi-k2p6,23736,1251,67519,42532,0,0.034358,67.06,67.97,5,2,0,True,True,True,7 passed in 0.00s,"A -> furthest=C(d=2) | A=0, B=1, C=2, D=1, E=1","A -> furthest=C(d=2) | A=0, B=1, C=2, D=1, E=1",0," | -        distances[neighbor] = new_dist |          if neighbor not in enqueued: | +            distances[neighbor] = new_dist |              enqueued.add(neighbor) |              queue.append((neighbor, new_dist)) |  return distances |   |  | [0m | [0m$ [0mecho '{""edges"":[[""A"",""B""],[""A"",""D""],["
+H3_graph_bfs,without-skill,3,ses_1c0b0f3caffePynOlHG42AIWwP,accounts/fireworks/models/kimi-k2p6,28611,3197,92558,60750,0,0.049688,79.96,80.88,6,2,0,True,True,True,7 passed in 0.00s,"A -> furthest=C(d=2) | A=0, B=1, C=2, D=1, E=1","A -> furthest=C(d=2) | A=0, B=1, C=2, D=1, E=1",0," python | [0m | [0m$ [0mpython3 -c "" | from buggy import build_graph, shortest_distances |  | g = build_graph([['A', 'B'], ['A', 'D'], ['B', 'D']]) | print(shortest_distances(g, 'A')) |  | # Additional test: cycle | h = build_graph([['A', 'B'], ['B', 'C'], ['C', 'A']]) | print(shortest_distances("
+H3_graph_bfs,with-skill,1,ses_1c0afb756ffepYLPPWEmYv9Dhj,accounts/fireworks/models/kimi-k2p6,47992,6323,208042,153727,0,0.095481,126.66,127.58,13,10,7,True,True,True,7 passed in 0.00s,"A -> furthest=C(d=2) | A=0, B=1, C=2, D=1, E=1","A -> furthest=C(d=2) | A=0, B=1, C=2, D=1, E=1",0,"(0) |      for neighbor in graph.neighbors(node): |          new_dist = dist + 1 | -        distances[neighbor] = new_dist |          if neighbor not in enqueued: | +            distances[neighbor] = new_dist |              enqueued.add(neighbor) |              queue.append((neighbor, new_dist)) |  "
+H3_graph_bfs,with-skill,2,ses_1c0adc330ffeFYeG0RFXrEtCkv,accounts/fireworks/models/kimi-k2p6,37612,1652,85769,46505,0,0.04978,61.15,62.35,6,3,0,True,True,True,7 passed in 0.00s,"A -> furthest=C(d=2) | A=0, B=1, C=2, D=1, E=1","A -> furthest=C(d=2) | A=0, B=1, C=2, D=1, E=1",0,"eighbors(node): | -        new_dist = dist + 1 | -        distances[neighbor] = new_dist |          if neighbor not in enqueued: | +            new_dist = dist + 1 | +            distances[neighbor] = new_dist |              enqueued.add(neighbor) |              queue.append((neighbor, new_dist)) | "
+H3_graph_bfs,with-skill,3,ses_1c0accff1ffecNCsD3pzfXOTUd,accounts/fireworks/models/kimi-k2p6,43627,10111,360014,306276,0,0.130894,208.25,209.19,19,13,6,True,True,True,7 passed in 0.00s,"A -> furthest=C(d=2) | A=0, B=1, C=2, D=1, E=1","A -> furthest=C(d=2) | A=0, B=1, C=2, D=1, E=1",0,"'pp queue' -c 'pp distances' -c 'q' debug_repro.py | Breakpoint 1 at /private/var/folders/8d/f0zzqb0n423cm6r04_v51wr80000gn/T/dse_H3_graph_bfs_with-skill_naotwghb/debug_repro.py:42 | [] | {'A': 0} | [('B', 1)] | {'A': 0, 'B': 1} | Result: {'A': 0, 'B': 1, 'D': 1} | Expected: {'A': 0, 'B': 1, 'D': 1}"
+H4_expr_parser,without-skill,1,ses_1c0a99e15ffeiKj62UwdVKtI8l,accounts/fireworks/models/kimi-k2p6,23092,845,56356,32419,0,0.030504,61.75,62.69,4,2,0,True,True,True,8 passed in 0.00s,"20 / 2 / 5 = 2
+100 / 10 / 2 = 5
+2 * 3 * 4 = 24
+10 - 2 - 3 = 5
+1 + 2 + 3 = 6
+(20 / 2) / 5 = 2
+20 / (2 / 5) = 50
+100 - 50 / 5 = 90
+8 / 4 * 2 = 4","20 / 2 / 5 = 2
+100 / 10 / 2 = 5
+2 * 3 * 4 = 24
+10 - 2 - 3 = 5
+1 + 2 + 3 = 6
+(20 / 2) / 5 = 2
+20 / (2 / 5) = 50
+100 - 50 / 5 = 90
+8 / 4 * 2 = 4",0,"dvance() | -        right = self.term() | +        right = self.factor() |          if op == ""*"": |              value = value * right |          else: |              value = value / right |  | [0m | [0m$ [0mecho '{""expressions"": [""20 / 2 / 5"", ""10 - 2 - 3"", ""2 * 3 * 4"", ""2 + 3 + 4""]}' | python b"
+H4_expr_parser,without-skill,2,ses_1c0a8a7a6ffehQCpkdqQotpR7o,accounts/fireworks/models/kimi-k2p6,11780,1107,56990,44103,0,0.022675,59.17,60.37,4,2,0,True,True,True,8 passed in 0.00s,"20 / 2 / 5 = 2
+100 / 10 / 2 = 5
+2 * 3 * 4 = 24
+10 - 2 - 3 = 5
+1 + 2 + 3 = 6
+(20 / 2) / 5 = 2
+20 / (2 / 5) = 50
+100 - 50 / 5 = 90
+8 / 4 * 2 = 4","20 / 2 / 5 = 2
+100 / 10 / 2 = 5
+2 * 3 * 4 = 24
+10 - 2 - 3 = 5
+1 + 2 + 3 = 6
+(20 / 2) / 5 = 2
+20 / (2 / 5) = 50
+100 - 50 / 5 = 90
+8 / 4 * 2 = 4",0," ""*"": |              value = value * right |          else: |              value = value / right |  | [0m | [0m$ [0mpython -c ""from buggy import evaluate; print(evaluate('20 / 2 / 5')); print(evaluate('10 - 2 - 3')); print(evaluate('2 * 3 * 4')); print(evaluate('2 + 3 + 4'))"" | zsh:1: command not"
+H4_expr_parser,without-skill,3,ses_1c0a7bc80ffeK1SiS7yyiT87Cw,accounts/fireworks/models/kimi-k2p6,11613,1051,56470,43806,0,0.022245,58.6,59.5,4,2,0,True,True,True,8 passed in 0.00s,"20 / 2 / 5 = 2
+100 / 10 / 2 = 5
+2 * 3 * 4 = 24
+10 - 2 - 3 = 5
+1 + 2 + 3 = 6
+(20 / 2) / 5 = 2
+20 / (2 / 5) = 50
+100 - 50 / 5 = 90
+8 / 4 * 2 = 4","20 / 2 / 5 = 2
+100 / 10 / 2 = 5
+2 * 3 * 4 = 24
+10 - 2 - 3 = 5
+1 + 2 + 3 = 6
+(20 / 2) / 5 = 2
+20 / (2 / 5) = 50
+100 - 50 / 5 = 90
+8 / 4 * 2 = 4",0,"dvance() | -        right = self.term() | +        right = self.factor() |          if op == ""*"": |              value = value * right |          else: |              value = value / right |  | [0m | [0m$ [0mecho '{""expressions"": [""20 / 2 / 5"", ""10 - 2 - 3"", ""2 * 3 * 4"", ""2 + 3 + 4""]}' | python b"
+H4_expr_parser,with-skill,1,ses_1c0a6d37cffeyo7lz7VqBMsNxJ,accounts/fireworks/models/kimi-k2p6,31190,2605,160483,126688,0,0.060321,344.93,345.85,12,8,5,True,True,True,8 passed in 0.00s,"20 / 2 / 5 = 2
+100 / 10 / 2 = 5
+2 * 3 * 4 = 24
+10 - 2 - 3 = 5
+1 + 2 + 3 = 6
+(20 / 2) / 5 = 2
+20 / (2 / 5) = 50
+100 - 50 / 5 = 90
+8 / 4 * 2 = 4","20 / 2 / 5 = 2
+100 / 10 / 2 = 5
+2 * 3 * 4 = 24
+10 - 2 - 3 = 5
+1 + 2 + 3 = 6
+(20 / 2) / 5 = 2
+20 / (2 / 5) = 50
+100 - 50 / 5 = 90
+8 / 4 * 2 = 4",0," op = self._advance() | -        right = self.term() | +        right = self.factor() |          if op == ""*"": |              value = value * right |          else: |              value = value / right |  | [0m | [0m$ [0mpython3 -c "" | from buggy import evaluate | print('20 / 2 / 5 =', evaluate('"
+H4_expr_parser,with-skill,2,ses_1c0a18b88ffeKnaz0AN2aWk25y,accounts/fireworks/models/kimi-k2p6,38969,10083,304806,255754,0,0.118273,237.07,238.04,17,11,6,True,True,True,8 passed in 0.00s,"20 / 2 / 5 = 2
+100 / 10 / 2 = 5
+2 * 3 * 4 = 24
+10 - 2 - 3 = 5
+1 + 2 + 3 = 6
+(20 / 2) / 5 = 2
+20 / (2 / 5) = 50
+100 - 50 / 5 = 90
+8 / 4 * 2 = 4","20 / 2 / 5 = 2
+100 / 10 / 2 = 5
+2 * 3 * 4 = 24
+10 - 2 - 3 = 5
+1 + 2 + 3 = 6
+(20 / 2) / 5 = 2
+20 / (2 / 5) = 50
+100 - 50 / 5 = 90
+8 / 4 * 2 = 4",0,"  op = self._advance() | -        right = self.term() | +        right = self.factor() |          if op == ""*"": |              value = value * right |          else: |              value = value / right |  | [0m | [0m$ [0mpython3 repro.py | 2.0 | [0m | [0m← [0mWrite test_input.json | Wrote fil"
+H4_expr_parser,with-skill,3,ses_1c09de905ffelieLX8pAlt3EYN,accounts/fireworks/models/kimi-k2p6,71139,8177,736491,657175,0,0.205438,225.84,226.81,33,20,13,True,True,True,8 passed in 0.00s,"20 / 2 / 5 = 2
+100 / 10 / 2 = 5
+2 * 3 * 4 = 24
+10 - 2 - 3 = 5
+1 + 2 + 3 = 6
+(20 / 2) / 5 = 2
+20 / (2 / 5) = 50
+100 - 50 / 5 = 90
+8 / 4 * 2 = 4","20 / 2 / 5 = 2
+100 / 10 / 2 = 5
+2 * 3 * 4 = 24
+10 - 2 - 3 = 5
+1 + 2 + 3 = 6
+(20 / 2) / 5 = 2
+20 / (2 / 5) = 50
+100 - 50 / 5 = 90
+8 / 4 * 2 = 4",0,"y | 20 / 2 / 5 = 2 | 10 - 2 - 3 = 5 | 2 * 3 * 4 = 24 | 2 + 3 + 4 = 9 | [0m | [0m$ [0mrm -f .pdbrc test_pdb.py test_pdb2.py test_pdb3.py test_debug.py test_debug2.py | [0m | [0m$ [0mls | AGENTS.md | __pycache__ | buggy.py | inputs.json | prompt.txt | [0m | [0m$ [0mecho '{""expressions"": [""20 "

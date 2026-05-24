@@ -1,0 +1,5 @@
+Fix the bug in buggy.py.
+
+Each Counter instance should have its own independent `items` list. Currently all instances share the same list, so `b.count()` reflects items added to `a` too.
+
+Do not change the public interface (class name, method names/signatures, or the __main__ behavior beyond making the output correct).

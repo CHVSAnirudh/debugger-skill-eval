@@ -1,0 +1,157 @@
+case,condition,run_idx,session_id,model_id,tokens_input,tokens_output,tokens_total,tokens_cache_read,tokens_cache_write,cost,wall_time_seconds,harness_wall_seconds,tool_calls,bash_calls,pdb_invocations,pytest_passed,golden_match,accuracy,pytest_summary,actual_output,expected_output,opencode_exit_code,opencode_stderr_tail
+V1_blind_csv,without-skill,1,ses_1c088fe29ffeRrTaDFTSEWYZ58,accounts/fireworks/models/kimi-k2p6,42523,2449,141752,96780,0,0.065678,80.18,81.23,7,4,0,True,True,True,7 passed in 0.01s,"Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16","Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16",0,"  transactions = [] |  | [0m | [0m$ [0mpython buggy.py | zsh:1: command not found: python | [0m | [0m$ [0mpython3 buggy.py | Top 5 customers by total spend: |   C0004: $11192.14 |   C0029: $10659.35 |   C0016: $9979.36 |   C0028: $9851.57 |   C0017: $9494.16 | [0m | [0m$ [0mpython3 -c "" | f"
+V1_blind_csv,without-skill,2,ses_1c087c081ffeRd4EbvZxd1uq8f,accounts/fireworks/models/kimi-k2p6,52705,1521,147569,93343,0,0.071089,117.35,118.3,8,4,0,True,True,True,7 passed in 0.01s,"Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16","Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16",0,"ultdict | from buggy import load_transactions, totals_by_customer, top_customers, format_report |  | transactions = load_transactions(Path('transactions.csv')) | print(f'Rows processed: {len(transactions)}') | totals = totals_by_customer(transactions) | print(f'Unique customers: {len(totals)}') | pr"
+V1_blind_csv,without-skill,3,ses_1c085f1c5ffe0amM4e1nGixWdr,accounts/fireworks/models/kimi-k2p6,41610,1071,145672,102991,0,0.060292,73.5,74.42,9,4,0,True,True,True,7 passed in 0.01s,"Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16","Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16",0,"  |   |  def load_transactions(path: Path) -> list[dict]: |      transactions = [] |  | [0m | [0m$ [0mpython3 buggy.py | Top 5 customers by total spend: |   C0004: $11192.14 |   C0029: $10659.35 |   C0016: $9979.36 |   C0028: $9851.57 |   C0017: $9494.16 | [0m | [0m$ [0mpython3 -c "" | import c"
+V1_blind_csv,with-skill,1,ses_1c084ce47ffe9uRJA8kjkStn5W,accounts/fireworks/models/kimi-k2p6,45124,1267,165523,119132,0,0.066997,91.09,92.0,8,5,2,True,True,True,7 passed in 0.01s,"Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16","Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16",0,"ace("","", """").strip()) |   |   |  def load_transactions(path: Path) -> list[dict]: |      transactions = [] |  | [0m | [0m$ [0mpython3 buggy.py | Top 5 customers by total spend: |   C0004: $11192.14 |   C0029: $10659.35 |   C0016: $9979.36 |   C0028: $9851.57 |   C0017: $9494.16 | [0m | [0m$ [0"
+V1_blind_csv,with-skill,2,ses_1c0836639ffeK5lBtLEMXP4YIL,accounts/fireworks/models/kimi-k2p6,43733,1735,166310,120842,0,0.067821,63.65,64.55,8,5,1,True,True,True,7 passed in 0.01s,"Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16","Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16",0,"-    return float(raw) | +    return float(raw.replace("","", """")) |   |   |  def load_transactions(path: Path) -> list[dict]: |      transactions = [] |  | [0m | [0m$ [0mpython3 buggy.py | Top 5 customers by total spend: |   C0004: $11192.14 |   C0029: $10659.35 |   C0016: $9979.36 |   C0028: $985"
+V1_blind_csv,with-skill,3,ses_1c0826934ffeKF8m2O1dBhatr0,accounts/fireworks/models/kimi-k2p6,39972,2106,167180,125102,0,0.066414,93.49,94.43,12,9,0,True,True,True,7 passed in 0.01s,"Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16","Top 5 customers by total spend:
+  C0004: $11192.14
+  C0029: $10659.35
+  C0016: $9979.36
+  C0028: $9851.57
+  C0017: $9494.16",0,"tions(path: Path) -> list[dict]: |      transactions = [] |      with path.open(newline="""") as f: |          reader = csv.DictReader(f) |  | [0m | [0m$ [0mpython3 buggy.py | Top 5 customers by total spend: |   C0004: $11192.14 |   C0029: $10659.35 |   C0016: $9979.36 |   C0028: $9851.57 |   C0017"
+V2_pandas_chained,without-skill,1,ses_1c080f63fffegrrk4Qu0sw24uj,accounts/fireworks/models/kimi-k2p6,23831,1427,107691,82433,0,0.041537,82.15,83.42,9,6,0,True,True,True,6 passed in 0.25s,customers=60 total_spend=37367.54 mean_spend=622.79,customers=60 total_spend=37367.54 mean_spend=622.79,0,"import json | from buggy import load_customers, apply_discount, summarize | from pathlib import Path |  | df = load_customers(Path('customers.csv')) | pre = summarize(df) | print('Pre-discount total_spend:', pre['total_spend']) | df = apply_discount(df, 500, 0.10) | post = summarize(df) | print('Pos"
+V2_pandas_chained,without-skill,2,ses_1c07faed6ffeQhXo2rkuz130Dz,accounts/fireworks/models/kimi-k2p6,24879,1413,82603,56311,0,0.038297,104.86,105.71,7,4,0,True,True,True,6 passed in 0.24s,customers=60 total_spend=37367.54 mean_spend=622.79,customers=60 total_spend=37367.54 mean_spend=622.79,0,"[0m | [0m$ [0msource venv/bin/activate && python -c "" | import pandas as pd | from pathlib import Path |  | # Load data | df = pd.read_csv('customers.csv') | orig_total = df['spend'].sum() | print(f'Original total_spend: {orig_total:.2f}') |  | # Apply discount manually | mask = df['spend'] > 500"
+V2_pandas_chained,without-skill,3,ses_1c07e0eaaffePFngGc5HMmIW3A,accounts/fireworks/models/kimi-k2p6,25341,1982,156879,129556,0,0.052731,64.44,65.3,12,7,0,True,True,True,6 passed in 0.23s,customers=60 total_spend=37367.54 mean_spend=622.79,customers=60 total_spend=37367.54 mean_spend=622.79,0,"m | [0m$ [0msource venv/bin/activate && python buggy.py < inputs.json | customers=60 total_spend=37367.54 mean_spend=622.79 | [0m | [0m$ [0msource venv/bin/activate && python -c "" | import pandas as pd | from pathlib import Path |  | df = pd.read_csv('customers.csv') | mask = df['spend'] > 500 "
+V2_pandas_chained,with-skill,1,ses_1c07d0c94ffevu1UdHs1fzzsVc,accounts/fireworks/models/kimi-k2p6,25785,1724,126418,98909,0,0.047217,52.74,53.59,10,7,0,True,True,True,6 passed in 0.15s,customers=60 total_spend=37367.54 mean_spend=622.79,customers=60 total_spend=37367.54 mean_spend=622.79,0,"mers by `rate` (e.g. 0.10 for 10%). |   |      Mutates df in place AND returns it for convenience. |      """""" | -    premium = df[df[""spend""] > threshold] | -    premium[""spend""] = premium[""spend""] * (1 - rate) | +    mask = df[""spend""] > threshold | +    df.loc[mask, ""spend""] = df.loc[mask, ""spend"""
+V2_pandas_chained,with-skill,2,ses_1c07c3726ffeeDZQ16S9cfQQlh,accounts/fireworks/models/kimi-k2p6,32570,2410,224857,189877,0,0.070962,82.83,84.02,17,12,6,True,True,True,6 passed in 0.25s,customers=60 total_spend=37367.54 mean_spend=622.79,customers=60 total_spend=37367.54 mean_spend=622.79,0,"m customers by `rate` (e.g. 0.10 for 10%). |   |      Mutates df in place AND returns it for convenience. |      """""" | -    premium = df[df[""spend""] > threshold] | -    premium[""spend""] = premium[""spend""] * (1 - rate) | +    mask = df[""spend""] > threshold | +    df.loc[mask, ""spend""] = df.loc[mask, "
+V2_pandas_chained,with-skill,3,ses_1c07aecadffeRobklxx4sQ7oVl,accounts/fireworks/models/kimi-k2p6,29238,3081,215628,183309,0,0.06943,100.49,101.45,17,13,6,True,True,True,6 passed in 0.24s,customers=60 total_spend=37367.54 mean_spend=622.79,customers=60 total_spend=37367.54 mean_spend=622.79,0,"pend=622.79 | [0m | [0m$ [0msource venv/bin/activate && echo '{""threshold"": 500.0, ""rate"": 0.0}' | python buggy.py | customers=60 total_spend=40846.64 mean_spend=680.78 | [0m | [0m$ [0msource venv/bin/activate && python -m pdb -c 'b 33' -c 'c' -c 'p id(df)' -c 'p id(mask)' -c 'p df[""spend""].su"
+V3_late_binding,without-skill,1,ses_1c0795cecffeHzNv5TXBAGOeS4,accounts/fireworks/models/kimi-k2p6,21588,907,53072,30577,0,0.029029,63.18,64.21,4,1,0,True,True,True,5 passed in 0.01s,"user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1","user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1",0,"[str, bool]: |      bucket = user_bucket(user_id) |  | [0m | [0m$ [0mpython3 -c "" | from buggy import Feature, build_predicates |  | features = [Feature('feat_a', 10), Feature('feat_b', 50), Feature('feat_c', 90)] | preds = build_predicates(features) | bucket = 30 | results = {f.name: int(p(bucke"
+V3_late_binding,without-skill,2,ses_1c0786214ffe7NPlvWaRVUrDQD,accounts/fireworks/models/kimi-k2p6,23874,1895,92003,66234,0,0.040858,67.72,68.61,7,5,0,True,True,True,5 passed in 0.01s,"user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1","user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1",0,"_30'.encode()).hexdigest() | print(int(h, 16) % 100) | "" | 84 | [0m | [0m$ [0mpython3 -c "" | import hashlib | for i in range(10000): |     uid = f'user_{i}' |     h = hashlib.sha256(uid.encode()).hexdigest() |     if int(h, 16) % 100 == 30: |         print(uid) |         break | "" | user_79 | [0"
+V3_late_binding,without-skill,3,ses_1c0775443ffe3L1QUglEEdZk9P,accounts/fireworks/models/kimi-k2p6,22178,1514,66312,42620,0,0.033944,57.2,58.41,5,2,0,True,True,True,5 passed in 0.01s,"user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1","user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1",0,"   break | "" |  | zsh:1: command not found: python | [0m | [0m$ [0mpython3 -c "" | from buggy import Feature, evaluate, user_bucket |  | features = [Feature('feat_a', 10), Feature('feat_b', 50), Feature('feat_c', 90)] | for i in range(10000): |     uid = f'u{i}' |     if user_bucket(uid) == 30: | "
+V3_late_binding,with-skill,1,ses_1c07670b1ffexebjN7v98NQHeC,accounts/fireworks/models/kimi-k2p6,23732,1240,80544,55572,0,0.036397,35.16,36.06,7,4,2,False,False,False,"3 failed, 2 passed in 0.01s","user_003: feat_a=1 feat_b=1 feat_c=1
+user_017: feat_a=1 feat_b=1 feat_c=1
+user_042: feat_a=1 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=1 feat_b=1 feat_c=1
+user_256: feat_a=1 feat_b=1 feat_c=1
+user_999: feat_a=1 feat_b=1 feat_c=1","user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1",0,0m$ [0mpython3 -m pdb -cc 'b 9' -cc 'c' -cc 'pp features' -cc 'pp preds[0].__closure__' -cc 'pp [c.cell_contents for c in preds[0].__closure__]' -cc 'pp [c.cell_contents for c in preds[1].__closure__]' -cc 'pp [c.cell_contents for c in preds[2].__closure__]' -cc 'c' /tmp/test_pdb.py | Error: b 9 do
+V3_late_binding,with-skill,2,ses_1c075e366ffe9yeOukStxTphno,accounts/fireworks/models/kimi-k2p6,34246,5350,254156,214560,0,0.088263,148.63,149.49,17,13,8,True,True,True,5 passed in 0.01s,"user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1","user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1",0,"[0].cell_contents) | "" | False Feature(name='feat_a', threshold=10) | True Feature(name='feat_b', threshold=50) | True Feature(name='feat_c', threshold=90) | [0m | [0m$ [0mecho '{""features"": [{""name"": ""feat_a"", ""threshold"": 10}, {""name"": ""feat_b"", ""threshold"": 50}, {""name"": ""feat_c"", ""threshold"":"
+V3_late_binding,with-skill,3,ses_1c07399dbffenUk7GlQinfLNhE,accounts/fireworks/models/kimi-k2p6,44187,3889,222672,174596,0,0.085469,99.61,100.74,16,13,6,True,True,True,5 passed in 0.01s,"user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1","user_003: feat_a=0 feat_b=1 feat_c=1
+user_017: feat_a=0 feat_b=1 feat_c=1
+user_042: feat_a=0 feat_b=1 feat_c=1
+user_088: feat_a=0 feat_b=0 feat_c=0
+user_121: feat_a=0 feat_b=0 feat_c=1
+user_256: feat_a=0 feat_b=0 feat_c=1
+user_999: feat_a=0 feat_b=0 feat_c=1",0,"e(""feat_b"", 50), Feature(""feat_c"", 90)] | preds = build_predicates(features) |  | for i, pred in enumerate(preds): |     print(f""pred[{i}] closure = {pred.__closure__}"") |     print(f""pred[{i}] defaults = {pred.__defaults__}"") |     print(f""pred[{i}](30) = {pred(30)}"") | EOF | python3 /tmp/verify_cl"
+V4_generator_exhaust,without-skill,1,ses_1c07210a1ffetikMTDKLJhn12Q,accounts/fireworks/models/kimi-k2p6,25016,2733,82929,55180,0,0.043526,59.73,60.63,6,3,0,True,True,True,5 passed in 0.01s,total=4963.98 count=25 max=388.62 unique_customers=13,total=4963.98 count=25 max=388.62 unique_customers=13,0,"n buggy.py | zsh:1: command not found: python | [0m | [0m$ [0mecho '{""transactions"": [{""customer_id"": ""A"", ""amount"": 10.0, ""day"": 5}, {""customer_id"": ""B"", ""amount"": 20.0, ""day"": 10}, {""customer_id"": ""A"", ""amount"": 30.0, ""day"": 15}], ""start"": 5, ""end"": 15}' | python3 buggy.py | total=60.0 count=3 "
+V4_generator_exhaust,without-skill,2,ses_1c0712350ffe3h0Gq1vivRpeFc,accounts/fireworks/models/kimi-k2p6,24349,2464,69211,42398,0,0.039771,64.46,65.36,5,2,0,True,True,True,5 passed in 0.01s,total=4963.98 count=25 max=388.62 unique_customers=13,total=4963.98 count=25 max=388.62 unique_customers=13,0,"_customers': 2}, f'Failed: {r}' | print('OK') | "" |  | zsh:1: command not found: python | [0m | [0m$ [0mpython3 -c "" | from buggy import Transaction, report |  | txs = [ |     Transaction('A', 100.0, 5), |     Transaction('B', 200.0, 6), |     Transaction('A', 150.0, 7), |     Transaction('C', 50"
+V4_generator_exhaust,without-skill,3,ses_1c0702270ffeVF45FhutySM34s,accounts/fireworks/models/kimi-k2p6,22788,1415,55836,31633,0,0.03237,78.51,79.61,4,2,0,True,True,True,5 passed in 0.01s,total=4963.98 count=25 max=388.62 unique_customers=13,total=4963.98 count=25 max=388.62 unique_customers=13,0,"t, 2), |  | [0m | [0m$ [0mecho '{""transactions"":[{""customer_id"":""A"",""amount"":10.0,""day"":5},{""customer_id"":""B"",""amount"":20.0,""day"":6},{""customer_id"":""A"",""amount"":15.0,""day"":7}],""start"":5,""end"":7}' | python buggy.py | zsh:1: command not found: python | [0m | [0m$ [0mecho '{""transactions"":[{""cust"
+V4_generator_exhaust,with-skill,1,ses_1c06eea6affevAyzZXX2NaJrp2,accounts/fireworks/models/kimi-k2p6,13781,3286,65882,48815,0,0.034046,65.55,66.72,4,2,0,True,True,True,5 passed in 0.01s,total=4963.98 count=25 max=388.62 unique_customers=13,total=4963.98 count=25 max=388.62 unique_customers=13,0,"s"": [{""customer_id"": ""a"", ""amount"": 10.0, ""day"": 5}, {""customer_id"": ""b"", ""amount"": 20.0, ""day"": 6}, {""customer_id"": ""a"", ""amount"": 5.0, ""day"": 7}], ""start"": 5, ""end"": 7}' | python buggy.py | zsh:1: command not found: python | [0m | [0m$ [0mecho '{""transactions"": [{""customer_id"": ""a"", ""amount"": 1"
+V4_generator_exhaust,with-skill,2,ses_1c06de561ffehEVk1AR4hiVQP0,accounts/fireworks/models/kimi-k2p6,38627,2530,98353,57196,0,0.055967,57.0,58.09,7,5,3,True,True,True,5 passed in 0.01s,total=4963.98 count=25 max=388.62 unique_customers=13,total=4963.98 count=25 max=388.62 unique_customers=13,0,"amount"": 20.0, ""day"": 2}], ""start"": 1, ""end"": 2}' | python3 /private/var/folders/8d/f0zzqb0n423cm6r04_v51wr80000gn/T/dse_V4_generator_exhaust_with-skill_zzx8wdsr/buggy.py | total=30.0 count=2 max=20.0 unique_customers=2 | [0m | [0m$ [0mecho '{""transactions"": [{""customer_id"": ""A"", ""amount"": 10.0, "
+V4_generator_exhaust,with-skill,3,ses_1c06d017fffeWlO1lIpERXhEk5,accounts/fireworks/models/kimi-k2p6,38384,2823,110864,69657,0,0.058902,62.98,64.13,10,8,4,True,True,True,5 passed in 0.01s,total=4963.98 count=25 max=388.62 unique_customers=13,total=4963.98 count=25 max=388.62 unique_customers=13,0,"on | total=30.0 count=2 max=20.0 unique_customers=2 | [0m | [0m$ [0mecho '{""transactions"": [{""customer_id"": ""A"", ""amount"": -5.0, ""day"": 5}], ""start"": 1, ""end"": 10}' > /tmp/test_neg.json && python3 buggy.py < /tmp/test_neg.json | total=-5.0 count=1 max=-5.0 unique_customers=1 | [0m | [0m$ [0mec"

@@ -1,0 +1,17 @@
+{
+  "window_size": 4,
+  "events": [
+    {"stream": "cpu", "timestamp": 1.0, "value": 30.0},
+    {"stream": "cpu", "timestamp": 2.0, "value": 20.0},
+    {"stream": "cpu", "timestamp": 3.0, "value": 10.0},
+    {"stream": "cpu", "timestamp": 4.0, "value": 50.0},
+    {"stream": "cpu", "timestamp": 5.0, "value": 40.0},
+    {"stream": "cpu", "timestamp": 6.0, "value": 100.0},
+    {"stream": "mem", "timestamp": 1.0, "value": 70.0},
+    {"stream": "mem", "timestamp": 2.0, "value": 80.0},
+    {"stream": "mem", "timestamp": 3.0, "value": 90.0},
+    {"stream": "mem", "timestamp": 4.0, "value": 60.0},
+    {"stream": "mem", "timestamp": 5.0, "value": 50.0},
+    {"stream": "mem", "timestamp": 6.0, "value": 5.0}
+  ]
+}

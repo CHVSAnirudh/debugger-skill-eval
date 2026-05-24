@@ -1,0 +1,14 @@
+{
+  "capacity": 10,
+  "refill_rate": 1.0,
+  "requests": [
+    {"key": "a", "at": 0.0, "cost": 10.0},
+    {"key": "a", "at": 0.5, "cost": 1.0},
+    {"key": "a", "at": 1.0, "cost": 1.0},
+    {"key": "a", "at": 2.0, "cost": 1.0},
+    {"key": "a", "at": 2.5, "cost": 1.0},
+    {"key": "b", "at": 0.0, "cost": 5.0},
+    {"key": "b", "at": 0.25, "cost": 1.0},
+    {"key": "b", "at": 1.5, "cost": 1.0}
+  ]
+}

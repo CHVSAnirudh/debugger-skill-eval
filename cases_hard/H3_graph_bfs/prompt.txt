@@ -1,0 +1,9 @@
+Fix the bug in buggy.py.
+
+`shortest_distances(graph, source)` should return the shortest-path distance from `source` to every reachable node (unweighted single-source). It returns wrong (inflated) distances for some nodes.
+
+Concrete failure: with edges [A->B, A->D, B->D], starting at A, the function returns {A:0, B:1, D:2} but the correct answer is {A:0, B:1, D:1} (D is reachable directly from A in 1 hop).
+
+The bug is in the traversal logic: there are two issues working together — the loop uses a LIFO container (so it explores in DFS order, not BFS), and the distance for an already-seen node is overwritten by later (longer) paths instead of being kept at its first-discovery value.
+
+Do not change the public interface (function signatures, the Graph class, or the __main__ behavior). Fix the algorithm.

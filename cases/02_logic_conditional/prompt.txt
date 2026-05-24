@@ -1,0 +1,10 @@
+Fix the bug in buggy.py.
+
+is_leap(year) should follow the Gregorian leap-year rules:
+- divisible by 4 -> leap
+- BUT divisible by 100 -> not leap
+- UNLESS also divisible by 400 -> leap
+
+Currently is_leap(1900) returns True but should return False, and is_leap(2000) returns True (correct by coincidence).
+
+Do not change the public interface (function name, parameters, or the __main__ behavior). Only fix the bug.

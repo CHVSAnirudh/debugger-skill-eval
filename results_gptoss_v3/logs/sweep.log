@@ -1,0 +1,52 @@
+[1/24] V1_blind_csv | without-skill | run 1
+   acc=True tokens=89369 wall=66.62s pdb=0
+[2/24] V1_blind_csv | without-skill | run 2
+   acc=True tokens=139218 wall=73.46s pdb=0
+[3/24] V1_blind_csv | without-skill | run 3
+   acc=False tokens=9461 wall=1.73s pdb=0
+[4/24] V1_blind_csv | with-skill | run 1
+   acc=False tokens=17031 wall=56.38s pdb=0
+[5/24] V1_blind_csv | with-skill | run 2
+   acc=True tokens=165163 wall=99.46s pdb=0
+[6/24] V1_blind_csv | with-skill | run 3
+   acc=True tokens=130317 wall=113.42s pdb=0
+[7/24] V2_pandas_chained | without-skill | run 1
+   acc=False tokens=12089 wall=32.22s pdb=0
+[8/24] V2_pandas_chained | without-skill | run 2
+   acc=False tokens=11753 wall=21.21s pdb=0
+[9/24] V2_pandas_chained | without-skill | run 3
+   acc=False tokens=34419 wall=60.76s pdb=0
+[10/24] V2_pandas_chained | with-skill | run 1
+   acc=False tokens=42683 wall=53.73s pdb=0
+[11/24] V2_pandas_chained | with-skill | run 2
+   acc=True tokens=105238 wall=62.26s pdb=0
+[12/24] V2_pandas_chained | with-skill | run 3
+   acc=True tokens=115053 wall=60.81s pdb=0
+[13/24] V3_late_binding | without-skill | run 1
+   acc=False tokens=11936 wall=20.13s pdb=0
+[14/24] V3_late_binding | without-skill | run 2
+   acc=False tokens=9733 wall=3.67s pdb=0
+[15/24] V3_late_binding | without-skill | run 3
+   acc=True tokens=40113 wall=55.78s pdb=0
+[16/24] V3_late_binding | with-skill | run 1
+   acc=False tokens=15987 wall=42.13s pdb=0
+[17/24] V3_late_binding | with-skill | run 2
+   acc=False tokens=12198 wall=20.8s pdb=0
+[18/24] V3_late_binding | with-skill | run 3
+   acc=True tokens=68852 wall=60.78s pdb=0
+[19/24] V4_generator_exhaust | without-skill | run 1
+   acc=False tokens=12667 wall=27.58s pdb=0
+[20/24] V4_generator_exhaust | without-skill | run 2
+   acc=False tokens=9693 wall=3.61s pdb=0
+[21/24] V4_generator_exhaust | without-skill | run 3
+   acc=True tokens=40584 wall=51.18s pdb=0
+[22/24] V4_generator_exhaust | with-skill | run 1
+   acc=True tokens=54408 wall=54.94s pdb=0
+[23/24] V4_generator_exhaust | with-skill | run 2
+   acc=False tokens=10025 wall=1.93s pdb=0
+[24/24] V4_generator_exhaust | with-skill | run 3
+   acc=True tokens=43180 wall=53.08s pdb=0
+
+Done. Results: /Users/anirudhchebolu/Desktop/projects/debugger-skill-eval/results_gptoss_v3/runs.csv
+Summary: /Users/anirudhchebolu/Desktop/projects/debugger-skill-eval/results_gptoss_v3/summary.md
+=== v3 done ===

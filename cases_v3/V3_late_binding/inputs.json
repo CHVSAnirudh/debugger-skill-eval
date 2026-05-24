@@ -1,0 +1,25 @@
+{
+  "user_ids": [
+    "user_003",
+    "user_017",
+    "user_042",
+    "user_088",
+    "user_121",
+    "user_256",
+    "user_999"
+  ],
+  "features": [
+    {
+      "name": "feat_a",
+      "threshold": 10
+    },
+    {
+      "name": "feat_b",
+      "threshold": 50
+    },
+    {
+      "name": "feat_c",
+      "threshold": 90
+    }
+  ]
+}

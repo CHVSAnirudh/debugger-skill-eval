@@ -1,0 +1,51 @@
+[1/24] H1_rolling_stats | without-skill | run 1
+   acc=True tokens=97769 wall=71.31s pdb=0
+[2/24] H1_rolling_stats | without-skill | run 2
+   acc=True tokens=49405 wall=64.45s pdb=0
+[3/24] H1_rolling_stats | without-skill | run 3
+   acc=True tokens=50944 wall=78.43s pdb=0
+[4/24] H1_rolling_stats | with-skill | run 1
+   acc=True tokens=451417 wall=134.66s pdb=0
+[5/24] H1_rolling_stats | with-skill | run 2
+   acc=True tokens=95249 wall=73.33s pdb=0
+[6/24] H1_rolling_stats | with-skill | run 3
+   acc=True tokens=279305 wall=149.59s pdb=0
+[7/24] H2_token_bucket | without-skill | run 1
+   acc=True tokens=54482 wall=54.79s pdb=0
+[8/24] H2_token_bucket | without-skill | run 2
+   acc=True tokens=44545 wall=57.69s pdb=0
+[9/24] H2_token_bucket | without-skill | run 3
+   acc=True tokens=69170 wall=61.32s pdb=0
+[10/24] H2_token_bucket | with-skill | run 1
+   acc=True tokens=82770 wall=61.36s pdb=0
+[11/24] H2_token_bucket | with-skill | run 2
+   acc=True tokens=58721 wall=61.16s pdb=0
+[12/24] H2_token_bucket | with-skill | run 3
+   acc=True tokens=217700 wall=76.21s pdb=1
+[13/24] H3_graph_bfs | without-skill | run 1
+   acc=True tokens=105033 wall=83.59s pdb=0
+[14/24] H3_graph_bfs | without-skill | run 2
+   acc=True tokens=67519 wall=67.06s pdb=0
+[15/24] H3_graph_bfs | without-skill | run 3
+   acc=True tokens=92558 wall=79.96s pdb=0
+[16/24] H3_graph_bfs | with-skill | run 1
+   acc=True tokens=208042 wall=126.66s pdb=1
+[17/24] H3_graph_bfs | with-skill | run 2
+   acc=True tokens=85769 wall=61.15s pdb=0
+[18/24] H3_graph_bfs | with-skill | run 3
+   acc=True tokens=360014 wall=208.25s pdb=0
+[19/24] H4_expr_parser | without-skill | run 1
+   acc=True tokens=56356 wall=61.75s pdb=0
+[20/24] H4_expr_parser | without-skill | run 2
+   acc=True tokens=56990 wall=59.17s pdb=0
+[21/24] H4_expr_parser | without-skill | run 3
+   acc=True tokens=56470 wall=58.6s pdb=0
+[22/24] H4_expr_parser | with-skill | run 1
+   acc=True tokens=160483 wall=344.93s pdb=1
+[23/24] H4_expr_parser | with-skill | run 2
+   acc=True tokens=304806 wall=237.07s pdb=0
+[24/24] H4_expr_parser | with-skill | run 3
+   acc=True tokens=736491 wall=225.84s pdb=0
+
+Done. Results: /Users/anirudhchebolu/Desktop/projects/debugger-skill-eval/results_cases_hard/runs.csv
+Summary: /Users/anirudhchebolu/Desktop/projects/debugger-skill-eval/results_cases_hard/summary.md

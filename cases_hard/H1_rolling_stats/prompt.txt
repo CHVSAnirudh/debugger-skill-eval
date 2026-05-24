@@ -1,0 +1,11 @@
+Fix the bug in buggy.py.
+
+RollingStats keeps a sliding window of the last `window_size` values and exposes mean/max/min. Mean is correct, but max and min are sometimes wrong: after adding a new value that should extend the current extremum, the cached value isn't refreshed.
+
+Concrete failure: window_size=3, add(1.0), add(2.0), add(3.0), then check max() -> returns 3.0 (correct). Now add(5.0): the window becomes [2.0, 3.0, 5.0], so max() should be 5.0 but the buggy code returns 3.0.
+
+The same problem affects min when a new smaller-than-current-min value is added.
+
+Inputs feed a Dashboard that aggregates several named streams. Fix the bug so all streams report correct max/min after the input sequence is processed.
+
+Do not change the public interface (class names, method names, the __main__ behavior, or the JSON shape of `snapshot()`).

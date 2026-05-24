@@ -1,0 +1,7 @@
+Fix the bug in buggy.py.
+
+config_value(config, key) is supposed to return config[key] if the key exists, and None otherwise (without raising). Currently it raises KeyError on missing keys.
+
+Reproduce with: echo '{"config": {"a": 1}, "key": "missing"}' | python buggy.py
+
+Do not change the public interface (function name, parameters, or the __main__ behavior beyond making it not crash on missing keys).
