@@ -1,0 +1,2364 @@
+Exporting session: ses_1c0be92c1ffeH8w5SAoLbZ90em
+{
+  "info": {
+    "id": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+    "slug": "calm-cabin",
+    "projectID": "global",
+    "directory": "[redacted:session-directory:ses_1c0be92c1ffeH8w5SAoLbZ90em]",
+    "title": "[redacted:session-title:ses_1c0be92c1ffeH8w5SAoLbZ90em]",
+    "version": "1.3.13",
+    "summary": {
+      "additions": 0,
+      "deletions": 0,
+      "files": 0
+    },
+    "cost": 0.15407814,
+    "tokens": {
+      "input": 56426,
+      "output": 9707,
+      "reasoning": 0,
+      "cache": {
+        "read": 385284,
+        "write": 0
+      }
+    },
+    "permission": [
+      {
+        "permission": "question",
+        "pattern": "*",
+        "action": "deny"
+      },
+      {
+        "permission": "plan_enter",
+        "pattern": "*",
+        "action": "deny"
+      },
+      {
+        "permission": "plan_exit",
+        "pattern": "*",
+        "action": "deny"
+      }
+    ],
+    "time": {
+      "created": 1779177712958,
+      "updated": 1779177847621
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1779177713008
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "fireworks-ai",
+          "modelID": "accounts/fireworks/models/kimi-k2p6"
+        },
+        "summary": {
+          "diffs": []
+        },
+        "id": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "[redacted:text:prt_e3f416d70002xpymr08Yim5K7X]",
+          "id": "prt_e3f416d70002xpymr08Yim5K7X",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f416d70001NootUlr4WdeJ4U"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f416d76001vRNY0UJvqJse7b]",
+          "root": "[redacted:root:msg_e3f416d76001vRNY0UJvqJse7b]"
+        },
+        "cost": 0.01050738,
+        "tokens": {
+          "total": 10469,
+          "input": 10174,
+          "output": 207,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 88
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177713014,
+          "completed": 1779177716393
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f416d76001vRNY0UJvqJse7b",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f41720f001yG3gMjdAyDSBta",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f416d76001vRNY0UJvqJse7b"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f417212001mVeLU31llBSGaa]",
+          "time": {
+            "start": 1779177714194,
+            "end": 1779177715968
+          },
+          "id": "prt_e3f417212001mVeLU31llBSGaa",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f416d76001vRNY0UJvqJse7b"
+        },
+        {
+          "type": "tool",
+          "tool": "read",
+          "callID": "functions.read:0",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f417902001pwkqiRqrr2E08K"
+            },
+            "output": "[redacted:tool-output:prt_e3f417902001pwkqiRqrr2E08K]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f417902001pwkqiRqrr2E08K"
+            },
+            "title": "[redacted:tool-title:prt_e3f417902001pwkqiRqrr2E08K]",
+            "time": {
+              "start": 1779177716368,
+              "end": 1779177716376
+            }
+          },
+          "id": "prt_e3f417902001pwkqiRqrr2E08K",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f416d76001vRNY0UJvqJse7b"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 10469,
+            "input": 10174,
+            "output": 207,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 88
+            }
+          },
+          "cost": 0.01050738,
+          "id": "prt_e3f417aa40019EvX37EAfepNDe",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f416d76001vRNY0UJvqJse7b"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f417aaa001ezZEqQfjE64qFi]",
+          "root": "[redacted:root:msg_e3f417aaa001ezZEqQfjE64qFi]"
+        },
+        "cost": 0.01336481,
+        "tokens": {
+          "total": 14350,
+          "input": 1519,
+          "output": 2570,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 10261
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177716394,
+          "completed": 1779177761418
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f417aaa001ezZEqQfjE64qFi",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f4185bd001xISW4NYiFLO45d",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f417aaa001ezZEqQfjE64qFi"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f4185bf001xXinlRXnfaYYjK]",
+          "time": {
+            "start": 1779177719231,
+            "end": 1779177747714
+          },
+          "id": "prt_e3f4185bf001xXinlRXnfaYYjK",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f417aaa001ezZEqQfjE64qFi"
+        },
+        {
+          "type": "tool",
+          "tool": "write",
+          "callID": "functions.write:1",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f41f506001lpf2kVIG4hW1Ce"
+            },
+            "output": "[redacted:tool-output:prt_e3f41f506001lpf2kVIG4hW1Ce]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f41f506001lpf2kVIG4hW1Ce"
+            },
+            "title": "[redacted:tool-title:prt_e3f41f506001lpf2kVIG4hW1Ce]",
+            "time": {
+              "start": 1779177749322,
+              "end": 1779177761407
+            }
+          },
+          "id": "prt_e3f41f506001lpf2kVIG4hW1Ce",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f417aaa001ezZEqQfjE64qFi"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 14350,
+            "input": 1519,
+            "output": 2570,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 10261
+            }
+          },
+          "cost": 0.01336481,
+          "id": "prt_e3f422a82001QE4gujwMnNDjHc",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f417aaa001ezZEqQfjE64qFi"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f422a8b001LpKLBvk1wjt8r2]",
+          "root": "[redacted:root:msg_e3f422a8b001LpKLBvk1wjt8r2]"
+        },
+        "cost": 0.01372903,
+        "tokens": {
+          "total": 14406,
+          "input": 14281,
+          "output": 37,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 88
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177761419,
+          "completed": 1779177763901
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f422a8b001LpKLBvk1wjt8r2",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f423271001Lyq5hINJMoptsY",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f422a8b001LpKLBvk1wjt8r2"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f42327400101XrK2INZoeXPH]",
+          "time": {
+            "start": 1779177763444,
+            "end": 1779177763594
+          },
+          "id": "prt_e3f42327400101XrK2INZoeXPH",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f422a8b001LpKLBvk1wjt8r2"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:2",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f42330d001R5k5oJWWvHTUAm"
+            },
+            "output": "[redacted:tool-output:prt_e3f42330d001R5k5oJWWvHTUAm]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f42330d001R5k5oJWWvHTUAm"
+            },
+            "title": "[redacted:tool-title:prt_e3f42330d001R5k5oJWWvHTUAm]",
+            "time": {
+              "start": 1779177763863,
+              "end": 1779177763897
+            }
+          },
+          "id": "prt_e3f42330d001R5k5oJWWvHTUAm",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f422a8b001LpKLBvk1wjt8r2"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 14406,
+            "input": 14281,
+            "output": 37,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 88
+            }
+          },
+          "cost": 0.01372903,
+          "id": "prt_e3f42343a0020C6CryaKTqHR9l",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f422a8b001LpKLBvk1wjt8r2"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f42343e002RiUz93LvDasdfJ]",
+          "root": "[redacted:root:msg_e3f42343e002RiUz93LvDasdfJ]"
+        },
+        "cost": 0.00458689,
+        "tokens": {
+          "total": 14479,
+          "input": 2655,
+          "output": 45,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 11779
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177763902,
+          "completed": 1779177765334
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f42343e002RiUz93LvDasdfJ",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f4238b9001oPJ27BvVZ8kDMe",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42343e002RiUz93LvDasdfJ"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f4238bb001KDqHZMaS0TaDD1]",
+          "time": {
+            "start": 1779177765051,
+            "end": 1779177765177
+          },
+          "id": "prt_e3f4238bb001KDqHZMaS0TaDD1",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42343e002RiUz93LvDasdfJ"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:3",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f42393c001y8LkskzqRXJRS6"
+            },
+            "output": "[redacted:tool-output:prt_e3f42393c001y8LkskzqRXJRS6]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f42393c001y8LkskzqRXJRS6"
+            },
+            "title": "[redacted:tool-title:prt_e3f42393c001y8LkskzqRXJRS6]",
+            "time": {
+              "start": 1779177765296,
+              "end": 1779177765331
+            }
+          },
+          "id": "prt_e3f42393c001y8LkskzqRXJRS6",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42343e002RiUz93LvDasdfJ"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 14479,
+            "input": 2655,
+            "output": 45,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 11779
+            }
+          },
+          "cost": 0.00458689,
+          "id": "prt_e3f4239d40012GJqxdGn728LR7",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42343e002RiUz93LvDasdfJ"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f4239d60023QbYRb0WS8j24r]",
+          "root": "[redacted:root:msg_e3f4239d60023QbYRb0WS8j24r]"
+        },
+        "cost": 0.00392013,
+        "tokens": {
+          "total": 14899,
+          "input": 83,
+          "output": 383,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 14433
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177765334,
+          "completed": 1779177768537
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f4239d60023QbYRb0WS8j24r",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f423bef001qLrU3yOJg0IlD8",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f4239d60023QbYRb0WS8j24r"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f423bf2001MJ1R83H4OF5IlE]",
+          "time": {
+            "start": 1779177765874,
+            "end": 1779177768112
+          },
+          "id": "prt_e3f423bf2001MJ1R83H4OF5IlE",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f4239d60023QbYRb0WS8j24r"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:4",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f4244b1001XntD6XpUKnbvQ5"
+            },
+            "output": "[redacted:tool-output:prt_e3f4244b1001XntD6XpUKnbvQ5]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f4244b1001XntD6XpUKnbvQ5"
+            },
+            "title": "[redacted:tool-title:prt_e3f4244b1001XntD6XpUKnbvQ5]",
+            "time": {
+              "start": 1779177768472,
+              "end": 1779177768534
+            }
+          },
+          "id": "prt_e3f4244b1001XntD6XpUKnbvQ5",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f4239d60023QbYRb0WS8j24r"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 14899,
+            "input": 83,
+            "output": 383,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 14433
+            }
+          },
+          "cost": 0.00392013,
+          "id": "prt_e3f424657001sRC4Ywg038CEpA",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f4239d60023QbYRb0WS8j24r"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f424659002t1zZ6k2D6Qsase]",
+          "root": "[redacted:root:msg_e3f424659002t1zZ6k2D6Qsase]"
+        },
+        "cost": 0.00454593,
+        "tokens": {
+          "total": 15356,
+          "input": 559,
+          "output": 429,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 14368
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177768537,
+          "completed": 1779177781673
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f424659002t1zZ6k2D6Qsase",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f42585e001RRgPosjGfpbl0Q",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f424659002t1zZ6k2D6Qsase"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f425861001VuOirRVbFsKPxG]",
+          "time": {
+            "start": 1779177773153,
+            "end": 1779177779967
+          },
+          "id": "prt_e3f425861001VuOirRVbFsKPxG",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f424659002t1zZ6k2D6Qsase"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:5",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f427302001PHjUG5r4Mj7xkN"
+            },
+            "output": "[redacted:tool-output:prt_e3f427302001PHjUG5r4Mj7xkN]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f427302001PHjUG5r4Mj7xkN"
+            },
+            "title": "[redacted:tool-title:prt_e3f427302001PHjUG5r4Mj7xkN]",
+            "time": {
+              "start": 1779177781592,
+              "end": 1779177781671
+            }
+          },
+          "id": "prt_e3f427302001PHjUG5r4Mj7xkN",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f424659002t1zZ6k2D6Qsase"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 15356,
+            "input": 559,
+            "output": 429,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 14368
+            }
+          },
+          "cost": 0.00454593,
+          "id": "prt_e3f4279a7002UJL27HxpeSw7T1",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f424659002t1zZ6k2D6Qsase"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f4279aa001YlpfBEE0FOFT0X]",
+          "root": "[redacted:root:msg_e3f4279aa001YlpfBEE0FOFT0X]"
+        },
+        "cost": 0.0043408,
+        "tokens": {
+          "total": 15715,
+          "input": 912,
+          "output": 288,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 14515
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177781674,
+          "completed": 1779177785364
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f4279aa001YlpfBEE0FOFT0X",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f427fc1001wAhMB2i5XVoNfC",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f4279aa001YlpfBEE0FOFT0X"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f427fc2001RBtNXu23xJwCaB]",
+          "time": {
+            "start": 1779177783235,
+            "end": 1779177784952
+          },
+          "id": "prt_e3f427fc2001RBtNXu23xJwCaB",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f4279aa001YlpfBEE0FOFT0X"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:6",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f42867c001NiFBWVmyzpQN34"
+            },
+            "output": "[redacted:tool-output:prt_e3f42867c001NiFBWVmyzpQN34]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f42867c001NiFBWVmyzpQN34"
+            },
+            "title": "[redacted:tool-title:prt_e3f42867c001NiFBWVmyzpQN34]",
+            "time": {
+              "start": 1779177785336,
+              "end": 1779177785358
+            }
+          },
+          "id": "prt_e3f42867c001NiFBWVmyzpQN34",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f4279aa001YlpfBEE0FOFT0X"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 15715,
+            "input": 912,
+            "output": 288,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 14515
+            }
+          },
+          "cost": 0.0043408,
+          "id": "prt_e3f42880f002RftrMdnYlUTeAh",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f4279aa001YlpfBEE0FOFT0X"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f428815001WpjbL7TAeZWpZo]",
+          "root": "[redacted:root:msg_e3f428815001WpjbL7TAeZWpZo]"
+        },
+        "cost": 0.00341126,
+        "tokens": {
+          "total": 15950,
+          "input": 378,
+          "output": 146,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 15426
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177785365,
+          "completed": 1779177787172
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f428815001WpjbL7TAeZWpZo",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f428b11001cF6MODy1qXsC6u",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f428815001WpjbL7TAeZWpZo"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f428b13001qjgo8fPDZG3aEm]",
+          "time": {
+            "start": 1779177786131,
+            "end": 1779177786943
+          },
+          "id": "prt_e3f428b13001qjgo8fPDZG3aEm",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f428815001WpjbL7TAeZWpZo"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:7",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f428e42001yVHqQJDcUVBaR7"
+            },
+            "output": "[redacted:tool-output:prt_e3f428e42001yVHqQJDcUVBaR7]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f428e42001yVHqQJDcUVBaR7"
+            },
+            "title": "[redacted:tool-title:prt_e3f428e42001yVHqQJDcUVBaR7]",
+            "time": {
+              "start": 1779177787095,
+              "end": 1779177787169
+            }
+          },
+          "id": "prt_e3f428e42001yVHqQJDcUVBaR7",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f428815001WpjbL7TAeZWpZo"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 15950,
+            "input": 378,
+            "output": 146,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 15426
+            }
+          },
+          "cost": 0.00341126,
+          "id": "prt_e3f428f22001Y6Gx8r4pTElGYk",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f428815001WpjbL7TAeZWpZo"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f428f24002Ing6kh6033IBiz]",
+          "root": "[redacted:root:msg_e3f428f24002Ing6kh6033IBiz]"
+        },
+        "cost": 0.00357923,
+        "tokens": {
+          "total": 16344,
+          "input": 365,
+          "output": 176,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 15803
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177787172,
+          "completed": 1779177789203
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f428f24002Ing6kh6033IBiz",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f429192001cSNPdVfFnf73at",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f428f24002Ing6kh6033IBiz"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f429194001DGCx5wAXiR3nJG]",
+          "time": {
+            "start": 1779177787796,
+            "end": 1779177788652
+          },
+          "id": "prt_e3f429194001DGCx5wAXiR3nJG",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f428f24002Ing6kh6033IBiz"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:8",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f4294ee001ATlQShaX97vU8m"
+            },
+            "output": "[redacted:tool-output:prt_e3f4294ee001ATlQShaX97vU8m]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f4294ee001ATlQShaX97vU8m"
+            },
+            "title": "[redacted:tool-title:prt_e3f4294ee001ATlQShaX97vU8m]",
+            "time": {
+              "start": 1779177789117,
+              "end": 1779177789201
+            }
+          },
+          "id": "prt_e3f4294ee001ATlQShaX97vU8m",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f428f24002Ing6kh6033IBiz"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 16344,
+            "input": 365,
+            "output": 176,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 15803
+            }
+          },
+          "cost": 0.00357923,
+          "id": "prt_e3f429711002NGrmzKzFFEf4vM",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f428f24002Ing6kh6033IBiz"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f429714001CwsxqM2QG4AGVQ]",
+          "root": "[redacted:root:msg_e3f429714001CwsxqM2QG4AGVQ]"
+        },
+        "cost": 0.00802147,
+        "tokens": {
+          "total": 17743,
+          "input": 285,
+          "output": 1291,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 16167
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177789204,
+          "completed": 1779177801212
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f429714001CwsxqM2QG4AGVQ",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f429ac1001Z8eoNPRB1oms39",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f429714001CwsxqM2QG4AGVQ"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f429ac3001UJkoM7cjJZdC5z]",
+          "time": {
+            "start": 1779177790147,
+            "end": 1779177799448
+          },
+          "id": "prt_e3f429ac3001UJkoM7cjJZdC5z",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f429714001CwsxqM2QG4AGVQ"
+        },
+        {
+          "type": "tool",
+          "tool": "edit",
+          "callID": "functions.edit:9",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f42bf1b001RXmu5JKEMAgNnk"
+            },
+            "output": "[redacted:tool-output:prt_e3f42bf1b001RXmu5JKEMAgNnk]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f42bf1b001RXmu5JKEMAgNnk"
+            },
+            "title": "[redacted:tool-title:prt_e3f42bf1b001RXmu5JKEMAgNnk]",
+            "time": {
+              "start": 1779177801191,
+              "end": 1779177801206
+            }
+          },
+          "id": "prt_e3f42bf1b001RXmu5JKEMAgNnk",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f429714001CwsxqM2QG4AGVQ"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 17743,
+            "input": 285,
+            "output": 1291,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 16167
+            }
+          },
+          "cost": 0.00802147,
+          "id": "prt_e3f42c5f7001NPCOS7aVufTYu5",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f429714001CwsxqM2QG4AGVQ"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f42c5fd0013YhoJ750hPOnXo]",
+          "root": "[redacted:root:msg_e3f42c5fd0013YhoJ750hPOnXo]"
+        },
+        "cost": 0.00403781,
+        "tokens": {
+          "total": 17799,
+          "input": 1307,
+          "output": 41,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 16451
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177801213,
+          "completed": 1779177803393
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f42c5fd0013YhoJ750hPOnXo",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f42cd58001J2m7XcGTa42MPn",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42c5fd0013YhoJ750hPOnXo"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f42cd5a001MgMu4FRYBAxF2d]",
+          "time": {
+            "start": 1779177803098,
+            "end": 1779177803228
+          },
+          "id": "prt_e3f42cd5a001MgMu4FRYBAxF2d",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42c5fd0013YhoJ750hPOnXo"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:10",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f42cdde001T179nUrroPe3sL"
+            },
+            "output": "[redacted:tool-output:prt_e3f42cdde001T179nUrroPe3sL]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f42cdde001T179nUrroPe3sL"
+            },
+            "title": "[redacted:tool-title:prt_e3f42cdde001T179nUrroPe3sL]",
+            "time": {
+              "start": 1779177803341,
+              "end": 1779177803391
+            }
+          },
+          "id": "prt_e3f42cdde001T179nUrroPe3sL",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42c5fd0013YhoJ750hPOnXo"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 17799,
+            "input": 1307,
+            "output": 41,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 16451
+            }
+          },
+          "cost": 0.00403781,
+          "id": "prt_e3f42ce7f002V1CGZpZSOJfhE7",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42c5fd0013YhoJ750hPOnXo"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f42ce82002AKW5aeyT06lTO9]",
+          "root": "[redacted:root:msg_e3f42ce82002AKW5aeyT06lTO9]"
+        },
+        "cost": 0.00355502,
+        "tokens": {
+          "total": 17998,
+          "input": 82,
+          "output": 159,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 17757
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177803394,
+          "completed": 1779177804924
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f42ce82002AKW5aeyT06lTO9",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f42d0b0001oIzeLbX8KdHTQH",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42ce82002AKW5aeyT06lTO9"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f42d0b3001OBfcN9do0o831m]",
+          "time": {
+            "start": 1779177803955,
+            "end": 1779177804133
+          },
+          "id": "prt_e3f42d0b3001OBfcN9do0o831m",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42ce82002AKW5aeyT06lTO9"
+        },
+        {
+          "type": "tool",
+          "tool": "write",
+          "callID": "functions.write:11",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f42d167001PcAlUDwD0M307L"
+            },
+            "output": "[redacted:tool-output:prt_e3f42d167001PcAlUDwD0M307L]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f42d167001PcAlUDwD0M307L"
+            },
+            "title": "[redacted:tool-title:prt_e3f42d167001PcAlUDwD0M307L]",
+            "time": {
+              "start": 1779177804899,
+              "end": 1779177804902
+            }
+          },
+          "id": "prt_e3f42d167001PcAlUDwD0M307L",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42ce82002AKW5aeyT06lTO9"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 17998,
+            "input": 82,
+            "output": 159,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 17757
+            }
+          },
+          "cost": 0.00355502,
+          "id": "prt_e3f42d475001H6ZYU67OeB2Zn7",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42ce82002AKW5aeyT06lTO9"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f42d47e001S0I4GYAZK68cry]",
+          "root": "[redacted:root:msg_e3f42d47e001S0I4GYAZK68cry]"
+        },
+        "cost": 0.01725805,
+        "tokens": {
+          "total": 18054,
+          "input": 18019,
+          "output": 35,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177804926,
+          "completed": 1779177808300
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f42d47e001S0I4GYAZK68cry",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f42ddf9001UnibpIFWV5hlYf",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42d47e001S0I4GYAZK68cry"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f42ddfb001qj12Nz2pOlRYL3]",
+          "time": {
+            "start": 1779177807355,
+            "end": 1779177807434
+          },
+          "id": "prt_e3f42ddfb001qj12Nz2pOlRYL3",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42d47e001S0I4GYAZK68cry"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:12",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f42de4c001yTrto9IZExdTZF"
+            },
+            "output": "[redacted:tool-output:prt_e3f42de4c001yTrto9IZExdTZF]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f42de4c001yTrto9IZExdTZF"
+            },
+            "title": "[redacted:tool-title:prt_e3f42de4c001yTrto9IZExdTZF]",
+            "time": {
+              "start": 1779177808245,
+              "end": 1779177808296
+            }
+          },
+          "id": "prt_e3f42de4c001yTrto9IZExdTZF",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42d47e001S0I4GYAZK68cry"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 18054,
+            "input": 18019,
+            "output": 35,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          },
+          "cost": 0.01725805,
+          "id": "prt_e3f42e1a9001EWuQ2TD7yNgvmo",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42d47e001S0I4GYAZK68cry"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f42e1ad001qAsAwJ6LQICd5Q]",
+          "root": "[redacted:root:msg_e3f42e1ad001qAsAwJ6LQICd5Q]"
+        },
+        "cost": 0.00422528,
+        "tokens": {
+          "total": 18376,
+          "input": 256,
+          "output": 282,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 17838
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177808301,
+          "completed": 1779177811882
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f42e1ad001qAsAwJ6LQICd5Q",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f42e4d00015hNz02A5LxTgeL",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42e1ad001qAsAwJ6LQICd5Q"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f42e4d3001BjiCj9voz7zBw1]",
+          "time": {
+            "start": 1779177809107,
+            "end": 1779177810419
+          },
+          "id": "prt_e3f42e4d3001BjiCj9voz7zBw1",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42e1ad001qAsAwJ6LQICd5Q"
+        },
+        {
+          "type": "tool",
+          "tool": "write",
+          "callID": "functions.write:13",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f42e9f6001cwxNv7z5tpHgq8"
+            },
+            "output": "[redacted:tool-output:prt_e3f42e9f6001cwxNv7z5tpHgq8]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f42e9f6001cwxNv7z5tpHgq8"
+            },
+            "title": "[redacted:tool-title:prt_e3f42e9f6001cwxNv7z5tpHgq8]",
+            "time": {
+              "start": 1779177811850,
+              "end": 1779177811857
+            }
+          },
+          "id": "prt_e3f42e9f6001cwxNv7z5tpHgq8",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42e1ad001qAsAwJ6LQICd5Q"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 18376,
+            "input": 256,
+            "output": 282,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 17838
+            }
+          },
+          "cost": 0.00422528,
+          "id": "prt_e3f42efa4001MoKzw9pzhj8xfm",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42e1ad001qAsAwJ6LQICd5Q"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f42efac0018a0utux1PpReB5]",
+          "root": "[redacted:root:msg_e3f42efac0018a0utux1PpReB5]"
+        },
+        "cost": 0.00335168,
+        "tokens": {
+          "total": 18439,
+          "input": 304,
+          "output": 42,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 18093
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177811884,
+          "completed": 1779177813442
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f42efac0018a0utux1PpReB5",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f42f48f001HLDa8eGBzdhuj7",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42efac0018a0utux1PpReB5"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f42f49100145PW0yxArBCygr]",
+          "time": {
+            "start": 1779177813137,
+            "end": 1779177813223
+          },
+          "id": "prt_e3f42f49100145PW0yxArBCygr",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42efac0018a0utux1PpReB5"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:14",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f42f4e9001WeKY2R4gGV55RK"
+            },
+            "output": "[redacted:tool-output:prt_e3f42f4e9001WeKY2R4gGV55RK]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f42f4e9001WeKY2R4gGV55RK"
+            },
+            "title": "[redacted:tool-title:prt_e3f42f4e9001WeKY2R4gGV55RK]",
+            "time": {
+              "start": 1779177813388,
+              "end": 1779177813440
+            }
+          },
+          "id": "prt_e3f42f4e9001WeKY2R4gGV55RK",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42efac0018a0utux1PpReB5"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 18439,
+            "input": 304,
+            "output": 42,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 18093
+            }
+          },
+          "cost": 0.00335168,
+          "id": "prt_e3f42f5c0002AkV84jJX5MWl3C",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42efac0018a0utux1PpReB5"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f42f5c3001WqDXL7hf7CESo5]",
+          "root": "[redacted:root:msg_e3f42f5c3001WqDXL7hf7CESo5]"
+        },
+        "cost": 0.00344126,
+        "tokens": {
+          "total": 18583,
+          "input": 82,
+          "output": 105,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 18396
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177813443,
+          "completed": 1779177814874
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f42f5c3001WqDXL7hf7CESo5",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f42f7c7001aSIIl90Vn3LWAS",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42f5c3001WqDXL7hf7CESo5"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f42f7c9001lOcFk486Ck065Y]",
+          "time": {
+            "start": 1779177813961,
+            "end": 1779177814777
+          },
+          "id": "prt_e3f42f7c9001lOcFk486Ck065Y",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42f5c3001WqDXL7hf7CESo5"
+        },
+        {
+          "type": "tool",
+          "tool": "glob",
+          "callID": "functions.glob:15",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f42fafb001sT5uMKdQ4OZYn2"
+            },
+            "output": "[redacted:tool-output:prt_e3f42fafb001sT5uMKdQ4OZYn2]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f42fafb001sT5uMKdQ4OZYn2"
+            },
+            "title": "[redacted:tool-title:prt_e3f42fafb001sT5uMKdQ4OZYn2]",
+            "time": {
+              "start": 1779177814847,
+              "end": 1779177814865
+            }
+          },
+          "id": "prt_e3f42fafb001sT5uMKdQ4OZYn2",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42f5c3001WqDXL7hf7CESo5"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 18583,
+            "input": 82,
+            "output": 105,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 18396
+            }
+          },
+          "cost": 0.00344126,
+          "id": "prt_e3f42fb56001yB4Op1wJEd3teT",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42f5c3001WqDXL7hf7CESo5"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f42fb5d0015gty2KvIh3N3c9]",
+          "root": "[redacted:root:msg_e3f42fb5d0015gty2KvIh3N3c9]"
+        },
+        "cost": 0.00517768,
+        "tokens": {
+          "total": 19037,
+          "input": 584,
+          "output": 435,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 18018
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177814877,
+          "completed": 1779177818834
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f42fb5d0015gty2KvIh3N3c9",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f42fd5f001jHwWMXb7hjdMok",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42fb5d0015gty2KvIh3N3c9"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f42fd61001ckSYlNCI1Szt9b]",
+          "time": {
+            "start": 1779177815393,
+            "end": 1779177818685
+          },
+          "id": "prt_e3f42fd61001ckSYlNCI1Szt9b",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42fb5d0015gty2KvIh3N3c9"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:16",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f430a3e001f7j7vS5HUzQKFf"
+            },
+            "output": "[redacted:tool-output:prt_e3f430a3e001f7j7vS5HUzQKFf]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f430a3e001f7j7vS5HUzQKFf"
+            },
+            "title": "[redacted:tool-title:prt_e3f430a3e001f7j7vS5HUzQKFf]",
+            "time": {
+              "start": 1779177818812,
+              "end": 1779177818830
+            }
+          },
+          "id": "prt_e3f430a3e001f7j7vS5HUzQKFf",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42fb5d0015gty2KvIh3N3c9"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 19037,
+            "input": 584,
+            "output": 435,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 18018
+            }
+          },
+          "cost": 0.00517768,
+          "id": "prt_e3f430acf001ej8yqFSPBlHbdX",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f42fb5d0015gty2KvIh3N3c9"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f430ad4001vOfzGB0ldLKBLl]",
+          "root": "[redacted:root:msg_e3f430ad4001vOfzGB0ldLKBLl]"
+        },
+        "cost": 0.00411192,
+        "tokens": {
+          "total": 19443,
+          "input": 888,
+          "output": 78,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 18477
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177818836,
+          "completed": 1779177820497
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f430ad4001vOfzGB0ldLKBLl",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f430dc70019YG3pPuPpIButA",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f430ad4001vOfzGB0ldLKBLl"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f430dca001uJD6dJmcqQLm1n]",
+          "time": {
+            "start": 1779177819594,
+            "end": 1779177819780
+          },
+          "id": "prt_e3f430dca001uJD6dJmcqQLm1n",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f430ad4001vOfzGB0ldLKBLl"
+        },
+        {
+          "type": "tool",
+          "tool": "read",
+          "callID": "functions.read:17",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f430e86001b7j5RhxheB9sht"
+            },
+            "output": "[redacted:tool-output:prt_e3f430e86001b7j5RhxheB9sht]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f430e86001b7j5RhxheB9sht"
+            },
+            "title": "[redacted:tool-title:prt_e3f430e86001b7j5RhxheB9sht]",
+            "time": {
+              "start": 1779177820468,
+              "end": 1779177820481
+            }
+          },
+          "id": "prt_e3f430e86001b7j5RhxheB9sht",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f430ad4001vOfzGB0ldLKBLl"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 19443,
+            "input": 888,
+            "output": 78,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 18477
+            }
+          },
+          "cost": 0.00411192,
+          "id": "prt_e3f43114d001edoLNO7ilrWdDC",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f430ad4001vOfzGB0ldLKBLl"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f4311540014BvBgVPnaoLvxl]",
+          "root": "[redacted:root:msg_e3f4311540014BvBgVPnaoLvxl]"
+        },
+        "cost": 0.00374564,
+        "tokens": {
+          "total": 19901,
+          "input": 492,
+          "output": 45,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 19364
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177820500,
+          "completed": 1779177821815
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f4311540014BvBgVPnaoLvxl",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f4315fd001skmsk9EWQm1TVZ",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f4311540014BvBgVPnaoLvxl"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f4315ff001oFJfQG5wkBVHB8]",
+          "time": {
+            "start": 1779177821695,
+            "end": 1779177821699
+          },
+          "id": "prt_e3f4315ff001oFJfQG5wkBVHB8",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f4311540014BvBgVPnaoLvxl"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:18",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f431604001YDWiYjpOW1uf1U"
+            },
+            "output": "[redacted:tool-output:prt_e3f431604001YDWiYjpOW1uf1U]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f431604001YDWiYjpOW1uf1U"
+            },
+            "title": "[redacted:tool-title:prt_e3f431604001YDWiYjpOW1uf1U]",
+            "time": {
+              "start": 1779177821721,
+              "end": 1779177821773
+            }
+          },
+          "id": "prt_e3f431604001YDWiYjpOW1uf1U",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f4311540014BvBgVPnaoLvxl"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 19901,
+            "input": 492,
+            "output": 45,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 19364
+            }
+          },
+          "cost": 0.00374564,
+          "id": "prt_e3f43167500181D71gZSK6a3JN",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f4311540014BvBgVPnaoLvxl"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f431679001mJBzmZC2xkZsJW]",
+          "root": "[redacted:root:msg_e3f431679001mJBzmZC2xkZsJW]"
+        },
+        "cost": 0.00511255,
+        "tokens": {
+          "total": 20419,
+          "input": 105,
+          "output": 459,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 19855
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177821817,
+          "completed": 1779177825792
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f431679001mJBzmZC2xkZsJW",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f4318770014tVf3i0Lzgy9Ub",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f431679001mJBzmZC2xkZsJW"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f431879001GbH1fd1RYK64J9]",
+          "time": {
+            "start": 1779177822329,
+            "end": 1779177824989
+          },
+          "id": "prt_e3f431879001GbH1fd1RYK64J9",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f431679001mJBzmZC2xkZsJW"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:19",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f4322e0001EmSepFa9LaZ5PK"
+            },
+            "output": "[redacted:tool-output:prt_e3f4322e0001EmSepFa9LaZ5PK]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f4322e0001EmSepFa9LaZ5PK"
+            },
+            "title": "[redacted:tool-title:prt_e3f4322e0001EmSepFa9LaZ5PK]",
+            "time": {
+              "start": 1779177825703,
+              "end": 1779177825791
+            }
+          },
+          "id": "prt_e3f4322e0001EmSepFa9LaZ5PK",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f431679001mJBzmZC2xkZsJW"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 20419,
+            "input": 105,
+            "output": 459,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 19855
+            }
+          },
+          "cost": 0.00511255,
+          "id": "prt_e3f4325ff002OTap3U9j3o5gEj",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f431679001mJBzmZC2xkZsJW"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f432601002loMTgMGo835uvz]",
+          "root": "[redacted:root:msg_e3f432601002loMTgMGo835uvz]"
+        },
+        "cost": 0.00934169,
+        "tokens": {
+          "total": 21965,
+          "input": 615,
+          "output": 1391,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 19959
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177825793,
+          "completed": 1779177837330
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f432601002loMTgMGo835uvz",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f43283a001vsP9sq5M1wq1ez",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f432601002loMTgMGo835uvz"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f43283c001sYK17HSqMAfXWL]",
+          "time": {
+            "start": 1779177826364,
+            "end": 1779177836882
+          },
+          "id": "prt_e3f43283c001sYK17HSqMAfXWL",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f432601002loMTgMGo835uvz"
+        },
+        {
+          "type": "tool",
+          "tool": "read",
+          "callID": "functions.read:20",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f4351560019BHGS4QIu65phl"
+            },
+            "output": "[redacted:tool-output:prt_e3f4351560019BHGS4QIu65phl]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f4351560019BHGS4QIu65phl"
+            },
+            "title": "[redacted:tool-title:prt_e3f4351560019BHGS4QIu65phl]",
+            "time": {
+              "start": 1779177837314,
+              "end": 1779177837322
+            }
+          },
+          "id": "prt_e3f4351560019BHGS4QIu65phl",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f432601002loMTgMGo835uvz"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 21965,
+            "input": 615,
+            "output": 1391,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 19959
+            }
+          },
+          "cost": 0.00934169,
+          "id": "prt_e3f43530c001uOMjIWUB3v63eC",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f432601002loMTgMGo835uvz"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f435317001BtgkofUZ0NVfFS]",
+          "root": "[redacted:root:msg_e3f435317001BtgkofUZ0NVfFS]"
+        },
+        "cost": 0.00531723,
+        "tokens": {
+          "total": 22291,
+          "input": 1589,
+          "output": 129,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 20573
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177837335,
+          "completed": 1779177838917
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f435317001BtgkofUZ0NVfFS",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f43556500126hj7ldn2JN2QI",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f435317001BtgkofUZ0NVfFS"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f43556700154Fv5guK0gfADF]",
+          "time": {
+            "start": 1779177837927,
+            "end": 1779177838536
+          },
+          "id": "prt_e3f43556700154Fv5guK0gfADF",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f435317001BtgkofUZ0NVfFS"
+        },
+        {
+          "type": "tool",
+          "tool": "read",
+          "callID": "functions.read:21",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f4357ca0010aKr9ITt0GOmmc"
+            },
+            "output": "[redacted:tool-output:prt_e3f4357ca0010aKr9ITt0GOmmc]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f4357ca0010aKr9ITt0GOmmc"
+            },
+            "title": "[redacted:tool-title:prt_e3f4357ca0010aKr9ITt0GOmmc]",
+            "time": {
+              "start": 1779177838882,
+              "end": 1779177838888
+            }
+          },
+          "id": "prt_e3f4357ca0010aKr9ITt0GOmmc",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f435317001BtgkofUZ0NVfFS"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 22291,
+            "input": 1589,
+            "output": 129,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 20573
+            }
+          },
+          "cost": 0.00531723,
+          "id": "prt_e3f43593f001xCn8W8rl7h1Dv1",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f435317001BtgkofUZ0NVfFS"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f43594a001Amyi0ZORgCxOpk]",
+          "root": "[redacted:root:msg_e3f43594a001Amyi0ZORgCxOpk]"
+        },
+        "cost": 0.00523376,
+        "tokens": {
+          "total": 22827,
+          "input": 320,
+          "output": 346,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 22161
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177838922,
+          "completed": 1779177842267
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f43594a001Amyi0ZORgCxOpk",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f435bc2001O6ulHvH0OGcbNr",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f43594a001Amyi0ZORgCxOpk"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f435bc6001SSINnlanwcw3KM]",
+          "time": {
+            "start": 1779177839558,
+            "end": 1779177841770
+          },
+          "id": "prt_e3f435bc6001SSINnlanwcw3KM",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f43594a001Amyi0ZORgCxOpk"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:22",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f43646c001ocOGZVOv5GhdtE"
+            },
+            "output": "[redacted:tool-output:prt_e3f43646c001ocOGZVOv5GhdtE]",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f43646c001ocOGZVOv5GhdtE"
+            },
+            "title": "[redacted:tool-title:prt_e3f43646c001ocOGZVOv5GhdtE]",
+            "time": {
+              "start": 1779177842179,
+              "end": 1779177842265
+            }
+          },
+          "id": "prt_e3f43646c001ocOGZVOv5GhdtE",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f43594a001Amyi0ZORgCxOpk"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 22827,
+            "input": 320,
+            "output": 346,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 22161
+            }
+          },
+          "cost": 0.00523376,
+          "id": "prt_e3f436659002QSjsxgxhh131uR",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f43594a001Amyi0ZORgCxOpk"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f43665c002h94mape9PseWPJ]",
+          "root": "[redacted:root:msg_e3f43665c002h94mape9PseWPJ]"
+        },
+        "cost": 0.00443705,
+        "tokens": {
+          "total": 23037,
+          "input": 455,
+          "output": 102,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 22480
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177842268,
+          "completed": 1779177843541
+        },
+        "finish": "tool-calls",
+        "id": "msg_e3f43665c002h94mape9PseWPJ",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f436878001zneVuPGUnZ9cfd",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f43665c002h94mape9PseWPJ"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f43687a001PFRh7990cycJFD]",
+          "time": {
+            "start": 1779177842810,
+            "end": 1779177843380
+          },
+          "id": "prt_e3f43687a001PFRh7990cycJFD",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f43665c002h94mape9PseWPJ"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "functions.bash:23",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_e3f436ab6001te13MAOZoQCddj"
+            },
+            "output": "",
+            "metadata": {
+              "redacted": "tool-state-metadata:prt_e3f436ab6001te13MAOZoQCddj"
+            },
+            "title": "[redacted:tool-title:prt_e3f436ab6001te13MAOZoQCddj]",
+            "time": {
+              "start": 1779177843516,
+              "end": 1779177843537
+            }
+          },
+          "id": "prt_e3f436ab6001te13MAOZoQCddj",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f43665c002h94mape9PseWPJ"
+        },
+        {
+          "reason": "tool-calls",
+          "type": "step-finish",
+          "tokens": {
+            "total": 23037,
+            "input": 455,
+            "output": 102,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 22480
+            }
+          },
+          "cost": 0.00443705,
+          "id": "prt_e3f436b53001JeOF4kITK6629w",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f43665c002h94mape9PseWPJ"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_e3f416d70001NootUlr4WdeJ4U",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "[redacted:cwd:msg_e3f436b58001EW5347TjcApcFy]",
+          "root": "[redacted:root:msg_e3f436b58001EW5347TjcApcFy]"
+        },
+        "cost": 0.00572459,
+        "tokens": {
+          "total": 23537,
+          "input": 117,
+          "output": 486,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 22934
+          }
+        },
+        "modelID": "accounts/fireworks/models/kimi-k2p6",
+        "providerID": "fireworks-ai",
+        "time": {
+          "created": 1779177843544,
+          "completed": 1779177847619
+        },
+        "finish": "stop",
+        "id": "msg_e3f436b58001EW5347TjcApcFy",
+        "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_e3f436d55001a06Gpqm7CWUTOP",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f436b58001EW5347TjcApcFy"
+        },
+        {
+          "type": "reasoning",
+          "text": "[redacted:reasoning:prt_e3f436d56001UKZgXHReLwKMrr]",
+          "time": {
+            "start": 1779177844054,
+            "end": 1779177845186
+          },
+          "id": "prt_e3f436d56001UKZgXHReLwKMrr",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f436b58001EW5347TjcApcFy"
+        },
+        {
+          "type": "text",
+          "text": "[redacted:text:prt_e3f4371c300191mFjxNaVLBNW7]",
+          "time": {
+            "start": 1779177847612,
+            "end": 1779177847612
+          },
+          "id": "prt_e3f4371c300191mFjxNaVLBNW7",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f436b58001EW5347TjcApcFy"
+        },
+        {
+          "reason": "stop",
+          "type": "step-finish",
+          "tokens": {
+            "total": 23537,
+            "input": 117,
+            "output": 486,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 22934
+            }
+          },
+          "cost": 0.00572459,
+          "id": "prt_e3f437b3e001MQL8YXVUI2MzPV",
+          "sessionID": "ses_1c0be92c1ffeH8w5SAoLbZ90em",
+          "messageID": "msg_e3f436b58001EW5347TjcApcFy"
+        }
+      ]
+    }
+  ]
+}
